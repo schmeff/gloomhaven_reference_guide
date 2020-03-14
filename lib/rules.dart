@@ -146,6 +146,7 @@ class Rules {
     },
     {
       'title': 'Determining Initiative',
+      'route': '/determiningInitiative',
       'description': 'After players have either selected their two action cards or declared a long rest, the players reveal a monster ability' +
           ' card for each type of monster that has at least one figure currently on the map. In addition, each player not taking a' +
           ' long rest reveals his or her selected cards for the round, placing their leading card on top so that its initiative value is' +
@@ -164,6 +165,7 @@ class Rules {
     },
     {
       'title': 'Character Turn',
+      'route': '/characterTurn',
       'description': 'On a character\'s turn, he or she will perform the top action of one of the two ability cards played and the bottom action of the' +
           ' other. The leading card designation used to determine initiative is no longer significant.\n\nEither card can be played first ' +
           'for its top or bottom action. When playing a card\'s action, the abilities of the action must be done in the order written and can\'t' +
@@ -178,6 +180,7 @@ class Rules {
     },
     {
       'title': 'Move',
+      'route': '/move',
       'description': 'A "Move X" ability allows a character to move up to X number of hexes on the map. Figures (characters and monsters) can move through allies, ' +
           'but cannot move through enemies or obstacles. Traps and other terrain effects of hexes must be resolved when a figure enters them with normal' +
           ' movement. A figure cannot end its movement in the same hex as another figure.\n\nFigures can never move through walls.\n\nSome Move abilities' +
@@ -191,6 +194,7 @@ class Rules {
     },
     {
       'title': 'Revealing A Room',
+      'route': '/revealingARoom',
       'description': 'During any part of a character\'s movement, if they enter a tile with a closed door, flip the door tile to the opened side and immediately ' +
           'reveal the adjacent room on the other side of the door. The Scenario Book will then specify what monsters, money tokens, and special overlay ' +
           'tiles should be placed in the revealed room, based on the number of characters (including exhausted characters). Note that, as in scenario ' +
