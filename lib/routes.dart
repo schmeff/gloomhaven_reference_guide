@@ -13,6 +13,7 @@ import './determiningInitiative/determining_initiative.dart';
 import './characterTurn/character_turn.dart';
 import './move/move.dart';
 import './revealingARoom/revealing_a_room.dart';
+import './attack/attack.dart';
 
 import './rule_description.dart';
 
@@ -33,6 +34,7 @@ class Routes {
     CharacterTurn.routeName: (context) => CharacterTurn(),
     Move.routeName: (context) => Move(),
     RevealingARoom.routeName: (context) => RevealingARoom(),
+    Attack.routeName: (context) => Attack(),
     RuleDescription.routeName: (context) => RuleDescription(),
   };
 

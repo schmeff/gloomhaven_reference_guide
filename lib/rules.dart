@@ -208,6 +208,7 @@ class Rules {
     },
     {
       'title': 'Attack',
+      'route': '/attack',
       'description': 'An "Attack X" ability allows a character to do a base X amount of damage to an enemy within their range. Figures cannot attack their allies. There' +
           ' are two types of attacks: ranged and melee.\n\nRanged attacks are accompanied by a "Range Y" value, which means any enemy within Y hexes can be ' +
           'targeted by the attack. Any ranged attack targeting an adjacent enemy gains Disadvantage against that target.\n\nMelee attacks have no accompanying' +
