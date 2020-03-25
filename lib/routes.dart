@@ -14,6 +14,7 @@ import './characterTurn/character_turn.dart';
 import './move/move.dart';
 import './revealingARoom/revealing_a_room.dart';
 import './attack/attack.dart';
+import 'advantageAndDisadvantage/advantage_and_disadvantage.dart';
 
 import './rule_description.dart';
 
@@ -35,6 +36,7 @@ class Routes {
     Move.routeName: (context) => Move(),
     RevealingARoom.routeName: (context) => RevealingARoom(),
     Attack.routeName: (context) => Attack(),
+    AdvantageAndDisadvantage.routeName: (context) => AdvantageAndDisadvantage(),
     RuleDescription.routeName: (context) => RuleDescription(),
   };
 

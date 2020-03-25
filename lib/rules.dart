@@ -235,6 +235,7 @@ class Rules {
     },
     {
       'title': 'Advantage And Disadvantage',
+      'route': '/advantageAndDisadvantage',
       'description': 'Some attacks may have either Advantage or Disadvantage.\n\nAn attacker with Advantage will draw two modifier cards from their deck and use whichever ' +
           'one is better. If one rolling modifier card was drawn, its effect is added to the other card played. If two rolling modifier cards were drawn, ' +
           'continue to draw cards until a rolling modifier is not drawn and then add together all drawn effects.\n\nAn attacker with Disadvantage will draw' +

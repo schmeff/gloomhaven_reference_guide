@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gloomhaven_reference_guide/rule_description_arguments.dart';
 
-
 import './rule_description.dart';
 import './rules.dart';
 import './rule_search.dart';
@@ -50,27 +49,42 @@ class _GloomhavenAppState extends State<GloomhavenApp> {
     });
   }
 
+  ThemeData _getTheme() {
+    return ThemeData(
+      scaffoldBackgroundColor: Color.fromRGBO(222, 210, 204, 1),
+      primaryColor: Color.fromRGBO(135, 163, 123, 1),
+      fontFamily: 'HighTower',
+      textTheme: TextTheme(
+        body1: TextStyle(
+          fontSize: 18,
+          fontFamily: 'HighTower',
+        )
+      ),
+      appBarTheme: AppBarTheme(
+        textTheme: TextTheme(
+          title: TextStyle(
+              color: Color.fromRGBO(53, 52, 48, 1),
+              fontFamily: 'PirataOne',
+              fontSize: 25.0),
+        ),
+      ),
+    );
+  }
+
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: _getTheme(),
       routes: Routes().getRoutes,
       home: Scaffold(
-        backgroundColor: Color.fromRGBO(222, 210, 204, 1),
         appBar: AppBar(
-          backgroundColor: Color.fromRGBO(135, 163, 123, 1),
-          title: Text(
-            "Gloomhaven Reference Guide",
-            style: TextStyle(
-                color: Color.fromRGBO(53, 52, 48, 1),
-                fontFamily: 'PirataOne',
-                fontSize: 25),
-          ),
+          title: Text("Gloomhaven Reference Guide"),
         ),
         body: Column(
           children: <Widget>[
             RuleSearch(_updateSearchResults),
             Expanded(
               child: ListView.separated(
-                padding: const EdgeInsets.all(10),
+                padding: const EdgeInsets.only(left: 10, right: 10, top: 10),
                 itemCount: filteredRules.length,
                 itemBuilder: (BuildContext context, int index) {
                   return Container(

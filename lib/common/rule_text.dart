@@ -9,10 +9,6 @@ class RuleText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
-      style: TextStyle(
-        fontSize: 18,
-        fontFamily: 'HighTower',
-      ),
     );
   }
 }

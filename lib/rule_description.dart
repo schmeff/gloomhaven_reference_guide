@@ -12,14 +12,8 @@ class RuleDescription extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color.fromRGBO(222,210,204, 1),
       appBar: AppBar(
-        backgroundColor: Color.fromRGBO(135, 163, 123, 1),
         title: Text(
           arguments.title,
-          style: TextStyle(
-              color: Color.fromRGBO(53, 52, 48, 1),
-              fontFamily: 'PirataOne',
-              fontSize: 25
-            ),
         ),
       ),
       body: Container(
@@ -31,8 +25,7 @@ class RuleDescription extends StatelessWidget {
                 flex: 1,
                 child: SingleChildScrollView(
                   child: Text(
-                    arguments.description,
-                    style: TextStyle(fontSize: 18, fontFamily: 'HighTower'),
+                    arguments.description
                   ),
                 ))
           ],

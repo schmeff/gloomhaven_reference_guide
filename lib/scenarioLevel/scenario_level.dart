@@ -14,7 +14,7 @@ class ScenarioLevel extends StatelessWidget {
       backgroundColor: Color.fromRGBO(222, 210, 204, 1),
       appBar: RuleTitle("Scenario Level", 56),
       body: Container(
-          margin: EdgeInsets.all(15),
+          margin: EdgeInsets.only(left: 15, right: 15),
           child: SingleChildScrollView(
             child: Column(
               children: <Widget>[
