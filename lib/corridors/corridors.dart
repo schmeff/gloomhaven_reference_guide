@@ -21,7 +21,7 @@ class Corridors extends StatelessWidget {
                   child: Image(
                     image: AssetImage('images/corridor.png'),
                   ),
-                  margin: EdgeInsets.only(bottom: 15),
+                  margin: EdgeInsets.only(bottom: 15, top: 15),
                 ),
                 RuleText(
                     'A corridor is placed on the connection of two map tiles to ' +

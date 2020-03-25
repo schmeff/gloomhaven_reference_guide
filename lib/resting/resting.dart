@@ -16,7 +16,7 @@ class Resting extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: <Widget>[
-                RuleText('Resting is the main way players can return discarded cards back into their hand of available cards. A player has two options' +
+                RuleText('\nResting is the main way players can return discarded cards back into their hand of available cards. A player has two options' +
                     ' when resting: a short rest or a long rest. In both cases, the rest action can only be taken if a player has two or more cards in' +
                     ' his or her discard pile, and a rest action always results in losing one of the discarded cards.\n'),
                 Row(

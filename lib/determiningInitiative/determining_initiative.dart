@@ -16,7 +16,7 @@ class DeterminingInitiative extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: <Widget>[
-                RuleText('After players have either selected their two action cards or declared a long rest, the players reveal a monster ability' +
+                RuleText('\nAfter players have either selected their two action cards or declared a long rest, the players reveal a monster ability' +
                     ' card for each type of monster that has at least one figure currently on the map. In addition, each player not taking a' +
                     ' long rest reveals his or her selected cards for the round, placing their leading card on top so that its initiative value is' +
                     ' visible.\n'),

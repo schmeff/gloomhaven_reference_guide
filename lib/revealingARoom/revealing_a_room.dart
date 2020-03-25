@@ -16,7 +16,7 @@ class RevealingARoom extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: <Widget>[
-                RuleText('During any part of a character\'s movement, if they enter a tile with a closed door, flip the door tile to the opened side and immediately ' +
+                RuleText('\nDuring any part of a character\'s movement, if they enter a tile with a closed door, flip the door tile to the opened side and immediately ' +
                     'reveal the adjacent room on the other side of the door. The Scenario Book will then specify what monsters, money tokens, and special overlay ' +
                     'tiles should be placed in the revealed room, based on the number of characters (including exhausted characters). Note that, as in scenario ' +
                     'setup, the standee numbers of the monsters in the new room should be randomized when placed. It is possible to run out of specific types of ' +

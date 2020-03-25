@@ -21,7 +21,7 @@ class Traps extends StatelessWidget {
                   child: Image(
                     image: AssetImage('images/traps.png'),
                   ),
-                  margin: EdgeInsets.only(bottom: 15),
+                  margin: EdgeInsets.only(bottom: 15, top: 15),
                 ),
                 RuleText('A trap is sprung when a figure enters its hex with normal or forced' +
                     ' movement. Flying and Jump movements are unaffected by traps. When a ' +
@@ -35,7 +35,7 @@ class Traps extends StatelessWidget {
                     ' and monsters can also create traps on the board, with the effects specified by' +
                     ' the ability that creates the trap. Whenever a trap is placed on the board,' +
                     ' tokens for the damage and effects the trap applies should be placed on top ' +
-                    'of the trap tile for easy reference.')
+                    'of the trap tile for easy reference.\n')
               ],
             ),
           )),

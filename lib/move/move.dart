@@ -21,7 +21,7 @@ class Move extends StatelessWidget {
                   child: Image(
                     image: AssetImage('images/move_icon.png'),
                   ),
-                  margin: EdgeInsets.only(bottom: 15),
+                  margin: EdgeInsets.only(bottom: 15, top: 15),
                 ),
                 RuleText('A "Move X" ability allows a character to move up to X number of hexes on the map. Figures (characters and monsters) can move through allies, ' +
                     'but cannot move through enemies or obstacles. Traps and other terrain effects of hexes must be resolved when a figure enters them with normal' +

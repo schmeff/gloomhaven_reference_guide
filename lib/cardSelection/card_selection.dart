@@ -17,7 +17,7 @@ class CardSelection extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 RuleText(
-                    'At the beginning of a round, each player will secretly select two cards from his or her hand to play facedown in front ' +
+                    '\nAt the beginning of a round, each player will secretly select two cards from his or her hand to play facedown in front ' +
                         'of them. Of the two cards, one should be selected as the leading card, which will determine the player\'s order ' +
                         'in the initiative for the round.\n'),
                 RuleText('Players should not show other players the cards in their hands nor give specific ' +

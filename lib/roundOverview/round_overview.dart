@@ -17,7 +17,7 @@ class RoundOverview extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 RuleText(
-                    'A scenario consists of a series of rounds that are played until players either meet the victory conditions of the ' +
+                    '\nA scenario consists of a series of rounds that are played until players either meet the victory conditions of the ' +
                         'scenario or fail the scenario. A round consists of the following steps:\n'),
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,

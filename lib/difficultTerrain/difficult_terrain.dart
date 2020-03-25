@@ -21,7 +21,7 @@ class DifficultTerrain extends StatelessWidget {
                   child: Image(
                     image: AssetImage('images/difficult_terrain.png'),
                   ),
-                  margin: EdgeInsets.only(bottom: 15),
+                  margin: EdgeInsets.only(bottom: 15, top: 15),
                 ),
                 RuleText(
                     'It takes a figure two normal movement points to enter a hex with difficult terrain. ' +

@@ -21,7 +21,7 @@ class Obstacles extends StatelessWidget {
                   child: Image(
                     image: AssetImage('images/obstacles.png'),
                   ),
-                  margin: EdgeInsets.only(bottom: 15),
+                  margin: EdgeInsets.only(bottom: 15, top: 15),
                 ),
                 RuleText('Obstacles have varying artwork, but they all have the same function: figures cannot ' +
                     'move through obstacles with a normal movement, but can move through them with a Flying' +

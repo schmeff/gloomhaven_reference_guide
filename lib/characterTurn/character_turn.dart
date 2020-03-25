@@ -17,7 +17,7 @@ class CharacterTurn extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 RuleText(
-                    'On a character\'s turn, he or she will perform the top action of one of the two ability cards played and the bottom action of the' +
+                    '\nOn a character\'s turn, he or she will perform the top action of one of the two ability cards played and the bottom action of the' +
                         ' other. The leading card designation used to determine initiative is no longer significant.\n'),
                 RuleText('Either card can be played first ' +
                     'for its top or bottom action. When playing a card\'s action, the abilities of the action must be done in the order written and can\'t' +

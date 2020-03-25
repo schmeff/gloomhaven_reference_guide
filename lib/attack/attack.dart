@@ -21,7 +21,7 @@ class Attack extends StatelessWidget {
                   child: Image(
                     image: AssetImage('images/attack_icon.png'),
                   ),
-                  margin: EdgeInsets.only(bottom: 15),
+                  margin: EdgeInsets.only(bottom: 15, top: 15),
                 ),
                 RuleText(
                     'An "Attack X" ability allows a character to do a base X amount of damage to an enemy within their range. Figures cannot attack their allies. There' +

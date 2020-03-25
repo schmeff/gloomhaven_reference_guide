@@ -21,7 +21,7 @@ class Doors extends StatelessWidget {
                   child: Image(
                     image: AssetImage('images/GloomhavenDoors.png'),
                   ),
-                  margin: EdgeInsets.only(bottom: 15),
+                  margin: EdgeInsets.only(bottom: 15, top: 15),
                 ),
                 RuleText('A door acts as a separation between two rooms. When a character moves onto a closed door ' +
                     'tile, they immediately flip over the door tile to the open side, revealing the adjacent room ' +

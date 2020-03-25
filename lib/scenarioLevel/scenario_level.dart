@@ -18,7 +18,7 @@ class ScenarioLevel extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: <Widget>[
-                RuleText('Monster base statistics, trap damage, the amount of gold received from money tokens, and the ' +
+                RuleText('\nMonster base statistics, trap damage, the amount of gold received from money tokens, and the ' +
                     'amount of bonus experience for completing a scenario are all dependent on the level of the ' +
                     'scenario being played. The scenario level is chosen by the players before the scenario begins' +
                     ' and is based on the average level of the party and how difficult the players want the scenario ' +

@@ -21,7 +21,7 @@ class HazardousTerrain extends StatelessWidget {
                   child: Image(
                     image: AssetImage('images/hazardous_terrain.png'),
                   ),
-                  margin: EdgeInsets.only(bottom: 15),
+                  margin: EdgeInsets.only(bottom: 15, top: 15),
                 ),
                 RuleText(
                     'If a figure enters a hex with hazardous terrain via normal or forced movement,' +
