@@ -55,11 +55,10 @@ class _GloomhavenAppState extends State<GloomhavenApp> {
       primaryColor: Color.fromRGBO(135, 163, 123, 1),
       fontFamily: 'HighTower',
       textTheme: TextTheme(
-        body1: TextStyle(
-          fontSize: 18,
-          fontFamily: 'HighTower',
-        )
-      ),
+          body1: TextStyle(
+        fontSize: 18,
+        fontFamily: 'HighTower',
+      )),
       appBarTheme: AppBarTheme(
         textTheme: TextTheme(
           title: TextStyle(
@@ -71,6 +70,8 @@ class _GloomhavenAppState extends State<GloomhavenApp> {
       buttonTheme: ButtonThemeData(
         buttonColor: Color.fromRGBO(135, 163, 123, 1),
       ),
+      accentColor: Color.fromRGBO(135, 163, 123, 1),
+      accentColorBrightness: Brightness.light,
     );
   }
 

@@ -21,6 +21,18 @@ import './addTarget/add_target.dart';
 import './push/push.dart';
 import './pull/pull.dart';
 import './pierce/pierce.dart';
+import './conditions/conditions.dart';
+import './poison/poison.dart';
+import './wound/wound.dart';
+import './immobilize/immobilize.dart';
+import './disarm/disarm.dart';
+import './stun/stun.dart';
+import './muddle/muddle.dart';
+import './curse/curse.dart';
+import './invisible/invisible.dart';
+import './strengthen/strengthen.dart';
+import './bless/bless.dart';
+
 
 import './rule_description.dart';
 
@@ -49,6 +61,17 @@ class Routes {
     Pull.routeName: (context) => Pull(),
     Pierce.routeName: (context) => Pierce(),
     AddTarget.routeName: (context) => AddTarget(),
+    Conditions.routeName: (context) => Conditions(),
+    Poison.routeName: (context) => Poison(),
+    Wound.routeName: (context) => Wound(),
+    Immobilize.routeName: (context) => Immobilize(),
+    Disarm.routeName: (context) => Disarm(),
+    Stun.routeName: (context) => Stun(),
+    Muddle.routeName: (context) => Muddle(),
+    Curse.routeName: (context) => Curse(),
+    Invisible.routeName: (context) => Invisible(),
+    Strengthen.routeName: (context) => Strengthen(),
+    Bless.routeName: (context) => Bless(),
     RuleDescription.routeName: (context) => RuleDescription(),
   };
 

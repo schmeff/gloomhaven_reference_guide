@@ -306,6 +306,7 @@ class Rules {
     },
     {
       'title': 'Conditions',
+      'route': '/conditions',
       'description': 'Certain abilities may apply conditions to their targets. When a condition is applied to a figure (except curse and bless), the' +
           ' respective token is placed on the stat sleeve in the section corresponding the number on the specific monster\'s standee to' +
           ' signify the effect. The condition remains on the figure until the requirements for removing the specific effect are met. Only' +
@@ -316,12 +317,14 @@ class Rules {
     },
     {
       'title': 'Poison(Condition)',
+      'route': '/poison',
       'description':
           'If a figure is poisoned, all enemies add +1 Attack to all of their attacks targeting the figure. If a Heal ability is used on' +
               ' a poisoned figure, the poison token is removed, and the Heal has no other effect.'
     },
     {
       'title': 'Wound(Condition)',
+      'route': '/wound',
       'description':
           'If a figure is wounded, it suffers one point of damage at the start of each of its turns. If a Heal ability is used on a wounded' +
               ' figure, the wound token is removed and the Heal continues normally. If a figure is both poisoned and wounded, a Heal ability would' +
@@ -329,16 +332,19 @@ class Rules {
     },
     {
       'title': 'Immobilize(Condition)',
+      'route': '/immobilize',
       'description':
           'If a figure is immobilized, it cannot perform any move abilities on its turn. At the end of its next turn, the immobilize token is removed.'
     },
     {
       'title': 'Disarm(Condition)',
+      'route': '/disarm',
       'description':
           'If a figure is disarmed, it cannot perform any attack abilities on its turn. At the end of its next turn, the disarm token is removed.'
     },
     {
       'title': 'Stun(Condition)',
+      'route': '/stun',
       'description':
           'If a figure is stunned, it cannot perform any abilities or use items on its turn except to perform a long rest (in the case of characters).' +
               ' At the end of its next turn, the stun token is removed. Players must still play two cards or rest on their turn, and if a player plays ' +
@@ -346,17 +352,20 @@ class Rules {
     },
     {
       'title': 'Muddle(Condition)',
+      'route': '/muddle',
       'description':
           'If a figure is muddled, it gains Disadvantage on all of its attacks. At the end of its next turn, the muddle token is removed.'
     },
     {
       'title': 'Curse(Condition)',
+      'route': '/curse',
       'description':
           'If a figure is cursed, it must shuffle a curse card into its remaining attack modifier deck. When this card is revealed through' +
               ' one of the figure\'s attacks, it is removed from the deck instead of being placed into the attack modifier discard pile.'
     },
     {
       'title': 'Invisible(Condition)',
+      'route': '/invisible',
       'description':
           'If a figure is invisible, it cannot be focused on or targeted by an enemy. Invisibility does not affect a figure\'s interactions' +
               ' with his or her allies. At the end of its next turn, the invisible token is removed. Monsters treat invisible characters exactly ' +
@@ -364,11 +373,13 @@ class Rules {
     },
     {
       'title': 'Strengthen(Condition)',
+      'route': '/strengthen',
       'description':
           'If a figure is strengthened, it gains Advantage on all of its attacks. At the end of its next turn, the strengthen token is removed.'
     },
     {
       'title': 'Bless(Condition)',
+      'route': '/bless',
       'description':
           'If a figure is blessed, it must shuffle a bless card into its remaining attack modifier deck. When this card is revealed through ' +
               'one of the figure\'s attacks, it is removed from the deck instead of being placed into the attack modifier discard pile.'

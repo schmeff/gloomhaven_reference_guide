@@ -10,6 +10,7 @@ class RuleSearch extends StatelessWidget {
     return Container(
       margin: EdgeInsets.all(5),
       child: TextField(
+        cursorColor: Theme.of(context).primaryColor,
         style: TextStyle(
           fontFamily: 'HighTower',
           fontSize: 18,
