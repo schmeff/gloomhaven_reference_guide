@@ -249,6 +249,7 @@ class Rules {
     },
     {
       'title': 'Area Effects',
+      'route': '/areaEffects',
       'description': 'Some attacks and other abilities allow figures to target multiple hexes or multiple targets at the same time. In these cases, the area of' +
           ' effect for the ability is shown on the ability card. Note that any rotational orientation of the depicted diagram is valid. Also note that ' +
           'each target constitutes a separate attack (drawing its own attack modifier card), but all attacks together make up a single attack action.\n\nGrey' +
@@ -264,6 +265,7 @@ class Rules {
     },
     {
       'title': 'Attack Effects',
+      'route': '/attackEffects',
       'description': 'Attack abilities will often have effects that increase their power. If an attack effect is listed on an ability card after an attack, the target ' +
           '(or targets) of the attack is subject to the additional effect as well, after damage from the attack is resolved. Attack effects are applied' +
           ' regardless of whether the corresponding attack does damage. These effects (except experience gains) are optional and can be skipped. Some character' +
@@ -271,6 +273,7 @@ class Rules {
     },
     {
       'title': 'Push X(Attack Effect)',
+      'route': '/push',
       'description':
           'The target is forced to move X hexes in a direction specified by the attacker, but each hex moved must ' +
               'place the target farther away from the attacker than it was previously. If there are no viable hexes ' +
@@ -278,6 +281,7 @@ class Rules {
     },
     {
       'title': 'Pull X(Attack Effect)',
+      'route': '/pull',
       'description': 'The target is forced to move X hexes in a direction specified by the attacker, but each hex moved must place the' +
           ' target closer to the attacker than it was previously. If there are no viable hexes into which to pull the target,' +
           ' the pull ends. The target can be pulled through its allies, but not its enemies. Both push and pull effects are ' +
@@ -285,6 +289,7 @@ class Rules {
     },
     {
       'title': 'Pierce X(Attack Effect)',
+      'route': '/pierce',
       'description':
           'Up to X points of the target\'s Shield are ignored for the attack. Unlike other effects, pierce is applied while ' +
               'calculating the accompanying attack damage instead of afterwards.\n\nExample: an Attack 3 pierce 2 ability used on a' +
@@ -293,6 +298,7 @@ class Rules {
     },
     {
       'title': 'Add Target(Attack Effect)',
+      'route': '/addTarget',
       'description':
           'If a figure triggers this effect with an attack action, the figure may add an additional target within range to their ' +
               'attack. All added effects and conditions of the attack action are applied to the target, as well, except for effects ' +

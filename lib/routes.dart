@@ -14,7 +14,13 @@ import './characterTurn/character_turn.dart';
 import './move/move.dart';
 import './revealingARoom/revealing_a_room.dart';
 import './attack/attack.dart';
-import 'advantageAndDisadvantage/advantage_and_disadvantage.dart';
+import './advantageAndDisadvantage/advantage_and_disadvantage.dart';
+import './areaEffects/area_effects.dart';
+import './attackEffects/attack_effects.dart';
+import './addTarget/add_target.dart';
+import './push/push.dart';
+import './pull/pull.dart';
+import './pierce/pierce.dart';
 
 import './rule_description.dart';
 
@@ -37,6 +43,12 @@ class Routes {
     RevealingARoom.routeName: (context) => RevealingARoom(),
     Attack.routeName: (context) => Attack(),
     AdvantageAndDisadvantage.routeName: (context) => AdvantageAndDisadvantage(),
+    AreaEffects.routeName: (context) => AreaEffects(),
+    AttackEffects.routeName: (context) => AttackEffects(),
+    Push.routeName: (context) => Push(),
+    Pull.routeName: (context) => Pull(),
+    Pierce.routeName: (context) => Pierce(),
+    AddTarget.routeName: (context) => AddTarget(),
     RuleDescription.routeName: (context) => RuleDescription(),
   };
 

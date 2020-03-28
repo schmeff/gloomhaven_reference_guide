@@ -68,6 +68,9 @@ class _GloomhavenAppState extends State<GloomhavenApp> {
               fontSize: 25.0),
         ),
       ),
+      buttonTheme: ButtonThemeData(
+        buttonColor: Color.fromRGBO(135, 163, 123, 1),
+      ),
     );
   }
 
