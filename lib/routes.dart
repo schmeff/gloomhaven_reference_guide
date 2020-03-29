@@ -32,6 +32,7 @@ import './curse/curse.dart';
 import './invisible/invisible.dart';
 import './strengthen/strengthen.dart';
 import './bless/bless.dart';
+import './elementalInfusions/elemental_infusion.dart';
 
 
 import './rule_description.dart';
@@ -72,6 +73,7 @@ class Routes {
     Invisible.routeName: (context) => Invisible(),
     Strengthen.routeName: (context) => Strengthen(),
     Bless.routeName: (context) => Bless(),
+    ElementalInfusions.routeName: (context) => ElementalInfusions(),
     RuleDescription.routeName: (context) => RuleDescription(),
   };
 

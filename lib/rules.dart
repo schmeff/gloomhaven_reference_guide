@@ -386,6 +386,7 @@ class Rules {
     },
     {
       'title': 'Elemental Infusions',
+      'route': '/elementalInfusions',
       'description': 'Some abilities have an elemental affinity associated with them (either Fire, Ice, Air, Earth, Light, or Dark). If any of these symbols' +
           ' is visible by itself in an action\'s description, it means that by performing any part of the action, the figure must infuse the ' +
           'battlefield with that element. This is represented by moving the corresponding element\'s token to the "Strong" column of the elemental' +
