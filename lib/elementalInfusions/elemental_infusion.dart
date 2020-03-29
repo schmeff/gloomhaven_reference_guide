@@ -100,8 +100,15 @@ class ElementalInfusions extends StatelessWidget {
                               ' colon and how the ability is augmented if the element is consumed. If an ability is used that consumes an element and the corresponding' +
                               ' element token is in the Strong or Waning column, that element token may be used to augment the ability by moving the token to the Inert column.' +
                               ' A single icon cannot be used to consume more than one infusion, and it is not possible to create an element and consume it on the same turn,' +
-                              ' but it may be consumed by anyone with a later turn in the initiative order of the same round.\n'),
+                              ' but it may be consumed by anyone with a later turn in the initiative order of the same round.'),
                     ],
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.only(top: 10),
+                  width: 200,
+                  child: Image(
+                    image: AssetImage('images/flame_strike_card.png'),
                   ),
                 ),
                 RichText(
@@ -109,7 +116,7 @@ class ElementalInfusions extends StatelessWidget {
                     style: Theme.of(context).textTheme.body1,
                     children: [
                       TextSpan(
-                          text: 'If an ability contains multiple separate augments,' +
+                          text: '\nIf an ability contains multiple separate augments,' +
                               ' the player may choose which augments to use in any order. If a single augment lists multiple element uses, all elements must be used to activate' +
                               ' the augment.\n'),
                     ],
