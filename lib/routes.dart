@@ -39,7 +39,7 @@ import './roundBonuses/round_bonuses.dart';
 import './shield/shield.dart';
 import './retaliate/retaliate.dart';
 import './heal/heal.dart';
-
+import './summon/summon.dart';
 
 import './rule_description.dart';
 
@@ -86,6 +86,7 @@ class Routes {
     Shield.routeName: (context) => Shield(),
     Heal.routeName: (context) => Heal(),
     Retaliate.routeName: (context) => Retaliate(),
+    Summon.routeName: (context) => Summon(),
     RuleDescription.routeName: (context) => RuleDescription(),
   };
 

@@ -458,6 +458,7 @@ class Rules {
     },
     {
       'title': 'Summon',
+      'route': '/summon',
       'description': 'Some abilities summon other ally figures to the board. Summoned figures (summons) are placed in an empty hex adjacent to the ' +
           'figure performing the summon. If there are no available hexes, the summon ability cannot be used. Summons are represented by ' +
           'a colored summon token. There are eight different colors of summon tokens so that multiple summons can be tracked at the same ' +
