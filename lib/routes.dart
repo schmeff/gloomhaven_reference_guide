@@ -33,6 +33,12 @@ import './invisible/invisible.dart';
 import './strengthen/strengthen.dart';
 import './bless/bless.dart';
 import './elementalInfusions/elemental_infusion.dart';
+import './activeBonuses/active_bonuses.dart';
+import './persistentBonuses/persistent_bonuses.dart';
+import './roundBonuses/round_bonuses.dart';
+import './shield/shield.dart';
+import './retaliate/retaliate.dart';
+import './heal/heal.dart';
 
 
 import './rule_description.dart';
@@ -74,6 +80,12 @@ class Routes {
     Strengthen.routeName: (context) => Strengthen(),
     Bless.routeName: (context) => Bless(),
     ElementalInfusions.routeName: (context) => ElementalInfusions(),
+    ActiveBonuses.routeName: (context) => ActiveBonuses(),
+    PersistentBonuses.routeName: (context) => PersistentBonuses(),
+    RoundBonuses.routeName: (context) => RoundBonuses(),
+    Shield.routeName: (context) => Shield(),
+    Heal.routeName: (context) => Heal(),
+    Retaliate.routeName: (context) => Retaliate(),
     RuleDescription.routeName: (context) => RuleDescription(),
   };
 

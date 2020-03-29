@@ -404,7 +404,15 @@ class Rules {
           ' choose which element is created or consumed.'
     },
     {
-      'title': 'Persistent Bonus',
+      'title': 'Active Bonuses',
+      'route': '/activeBonuses',
+      'description': 'Some abilities can give a character, or his or her abilities, bonuses on other abilities, either persistently until certain conditions ' +
+                     'are fulfilled or for the rest of the round. These abilities are denoted with symbols, and the cards with these effects are playing' +
+                     ' into the active area in front of the player to keep track of these bonuses.'
+    },
+    {
+      'title': 'Persistent Bonuses',
+      'route': '/persistentBonuses',
       'description': 'Persistent bonuses can be identified by the above symbol displayed on the card. These ability effects will be active from the time the card is ' +
           'played until the conditions specified on the card are met. These conditions usually track the number of times a particular game event has' +
           ' occurred, such as making or defending against an attack. Place a token on the first marked position of the card\'s action and advance it' +
@@ -417,7 +425,8 @@ class Rules {
           'forward one space. Once the token moves twice, the card is moved to the player\'s lost pile and the bonus is no longer active.'
     },
     {
-      'title': 'Round Bonus',
+      'title': 'Round Bonuses',
+      'route': '/roundBonuses',
       'description': 'Round bonuses will have the above symbol on the card. The effect of the ability will be active from the time the card is played until the end' +
           ' of the round, at which point the card will be placed in the player\'s discard or lost pile (depending on whether the action also contains an' +
           ' symbol).\n\nEven though a bonus card is placed in the active area, it is still considered discarded or lost, depending on whether the action ' +
@@ -426,12 +435,14 @@ class Rules {
     },
     {
       'title': 'Shield',
+      'route': '/shield',
       'description':
           'A "Shield X" bonus ability gives the recipient a defender\'s bonus that reduces any incoming attack value by X. Multiple shield bonuses stack with one ' +
               'another and can be applied in any order. A shield bonus only applies to damage caused by an attack.'
     },
     {
       'title': 'Retaliate',
+      'route': '/retaliate',
       'description': 'A "Retaliate X" bonus ability causes the recipient to inflict X points of damage on figures who attack it from an adjacent hex for each attack made. ' +
           'A retaliate bonus can also be accompanied by a "Range Y" value, which means that the retaliate damage is applied to any attacker within Y hexes. A ' +
           'retaliate takes effect after the attack that initiated it. If the retaliating figure is killed or exhausted by the attack, then the retaliate does ' +
@@ -439,6 +450,7 @@ class Rules {
     },
     {
       'title': 'Heal',
+      'route': '/heal',
       'description':
           'A "Heal X" ability allows a figure to return X hit points to either themselves or one ally within the ability\'s range. Heals are always accompanied ' +
               'by one of two labels:\n\n"Range Y" means that any ally within Y hexes, or the figure performing the heal, can be affected by the heal. Like all ' +
