@@ -522,6 +522,7 @@ class Rules {
     },
     {
       'title': 'Exhaustion',
+      'route': '/exhaustion',
       'description': 'A character can become exhausted in one of two ways:\n\n\t1. If a character ever drops below one hit point on the hit point tracker,' +
           ' or…\n\n\t2. If, at the beginning of a round, a player cannot play two cards from his or her hand (because they have one card or no ' +
           'cards in his or her hand) and also cannot rest (because they have one card or no cards in their discard pile). Exhaustion due to' +
