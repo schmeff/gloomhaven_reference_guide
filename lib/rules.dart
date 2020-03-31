@@ -512,6 +512,7 @@ class Rules {
     },
     {
       'title': 'Character Damage',
+      'route': '/characterDamage',
       'description': 'Whenever any damage is dealt to a character, the player has two options:\n\n\t1. Suffer the damage and move his or her hit point total' +
           ' on the tracking wheel down the appropriate number, or…\n\n\t2. Choose one card to lose from his or her hand or two cards to lose from' +
           ' his or her discard pile to negate the damage (any additional effects of the attack are still applied). Note that before a character acts' +
