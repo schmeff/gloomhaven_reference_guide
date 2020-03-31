@@ -40,6 +40,7 @@ import './shield/shield.dart';
 import './retaliate/retaliate.dart';
 import './heal/heal.dart';
 import './summon/summon.dart';
+import './recoverAndRefresh/recover_and_refresh.dart';
 
 import './rule_description.dart';
 
@@ -87,6 +88,7 @@ class Routes {
     Heal.routeName: (context) => Heal(),
     Retaliate.routeName: (context) => Retaliate(),
     Summon.routeName: (context) => Summon(),
+    RecoverAndRefresh.routeName: (context) => RecoverAndRefresh(),
     RuleDescription.routeName: (context) => RuleDescription(),
   };
 

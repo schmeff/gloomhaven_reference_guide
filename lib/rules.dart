@@ -475,10 +475,11 @@ class Rules {
     },
     {
       'title': 'Recover And Refresh',
+      'route': '/recoverAndRefresh',
       'description': 'Certain abilities allow a player to recover discarded or lost ability cards. This means that the player can look through his or' +
           ' her discard or lost pile (or discarded or lost cards in his or her active area), select up to a number of cards specified in the' +
           ' ability, and immediately return them to his or her hand. Some cards, however, cannot be recovered or refreshed once lost. This is' +
-          ' denoted by the @recover.png" width="30"> symbol. This symbol applies to the card no matter how the card was lost or consumed' +
+          ' denoted by the  symbol. This symbol applies to the card no matter how the card was lost or consumed' +
           '.\n\nRefresh abilities allow players to regain the use of spent or consumed item cards.\n\nIn the case of both recover and refresh, ' +
           'the type of card gained (discarded or lost for ability cards, spent or consumed for item cards) is specified in the ability.'
     },
