@@ -43,6 +43,7 @@ import './summon/summon.dart';
 import './recoverAndRefresh/recover_and_refresh.dart';
 import './loot/loot.dart';
 import './endOfTurnLooting/end_of_turn_looting.dart';
+import './gainingExperience/gaining_experience.dart';
 
 import './rule_description.dart';
 
@@ -93,6 +94,7 @@ class Routes {
     RecoverAndRefresh.routeName: (context) => RecoverAndRefresh(),
     Loot.routeName: (context) => Loot(),
     EndOfTurnLooting.routeName: (context) => EndOfTurnLooting(),
+    GainingExperience.routeName: (context) => GainingExperience(),
     RuleDescription.routeName: (context) => RuleDescription(),
   };
 

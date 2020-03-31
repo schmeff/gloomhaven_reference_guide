@@ -501,8 +501,9 @@ class Rules {
     },
     {
       'title': 'Gaining Experience',
+      'route': '/gainingExperience',
       'description': 'Some actions also have an experience value attached to them. When that action is taken, the character gains the number of experience ' +
-          'specified. An ability card cannot be played for the experience alone-a character must use one or more of the accompanying abilities to ' +
+          'specified. An ability card cannot be played for the experience alone--a character must use one or more of the accompanying abilities to ' +
           'earn the experience.\n\nIn addition, sometimes the action specifies that experience is only earned under certain conditions, ' +
           'such as consuming an elemental infusion or if the attacked target is adjacent to an attacker\'s allies. Some persistent bonuses ' +
           'will also give a character experience, denoted by , when that charge of the bonus is expended (i.e., when the character token moves off' +

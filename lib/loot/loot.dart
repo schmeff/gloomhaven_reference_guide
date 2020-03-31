@@ -44,7 +44,7 @@ class Loot extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Text(
-                        'End of Turn Looting',
+                        'End Of Turn Looting',
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold
