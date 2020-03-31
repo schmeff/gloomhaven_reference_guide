@@ -485,6 +485,7 @@ class Rules {
     },
     {
       'title': 'Loot',
+      'route': '/loot',
       'description': 'A "Loot X" ability allows a character to pick up every money token and treasure tile within range X. This action is unaffected by the' +
           ' positions of monsters or obstacles, but note this is considered a ranged ability for the purposes of line-of-sight. Money tokens' +
           ' are kept in a player\'s personal supply and are not shared with the other players. If a treasure tile is looted, immediately refer' +
@@ -492,7 +493,8 @@ class Rules {
           ' item he or she already owns a copy of, the new item is immediately sold to the city\'s available supply.'
     },
     {
-      'title': 'End-of-turn Looting',
+      'title': 'End Of Turn Looting',
+      'route': '/endOfTurnLooting',
       'description':
           'In addition to specific loot abilities, a character must also loot any money tokens or treasure tiles present in the hex he or she' +
               ' occupies at the end of the character\'s turn. Character summons do not perform end-of-turn looting.'

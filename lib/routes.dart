@@ -41,6 +41,8 @@ import './retaliate/retaliate.dart';
 import './heal/heal.dart';
 import './summon/summon.dart';
 import './recoverAndRefresh/recover_and_refresh.dart';
+import './loot/loot.dart';
+import './endOfTurnLooting/end_of_turn_looting.dart';
 
 import './rule_description.dart';
 
@@ -89,6 +91,8 @@ class Routes {
     Retaliate.routeName: (context) => Retaliate(),
     Summon.routeName: (context) => Summon(),
     RecoverAndRefresh.routeName: (context) => RecoverAndRefresh(),
+    Loot.routeName: (context) => Loot(),
+    EndOfTurnLooting.routeName: (context) => EndOfTurnLooting(),
     RuleDescription.routeName: (context) => RuleDescription(),
   };
 
