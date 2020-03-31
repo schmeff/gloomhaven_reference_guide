@@ -533,6 +533,7 @@ class Rules {
     },
     {
       'title': 'Items',
+      'route': '/items',
       'description': 'Characters can use items at any time, within the constraints of what is written on the item card, including in the middle of a card ability. ' +
           'However, if an item affects an attack (e.g. adds a bonus, an effect, advantage, or disadvantage), it has to be used before an attack modifier ' +
           'is drawn. If an effect is added to an attack, it functions exactly as if it had been written on the action card being used for the attack.' +

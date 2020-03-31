@@ -46,6 +46,7 @@ import './endOfTurnLooting/end_of_turn_looting.dart';
 import './gainingExperience/gaining_experience.dart';
 import './characterDamage/character_damage.dart';
 import './exhaustion/exhaustion.dart';
+import './items/items.dart';
 
 import './rule_description.dart';
 
@@ -99,6 +100,7 @@ class Routes {
     GainingExperience.routeName: (context) => GainingExperience(),
     CharacterDamage.routeName: (context) => CharacterDamage(),
     Exhaustion.routeName: (context) => Exhaustion(),
+    Items.routeName: (context) => Items(),
     RuleDescription.routeName: (context) => RuleDescription(),
   };
 
