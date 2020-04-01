@@ -161,7 +161,7 @@ class MonsterInteractionWithTerrain extends StatelessWidget {
                         ),
                       ),
                       TextSpan(
-                        text: ', as it would get her no closer to being in range of the Brute.',
+                        text: ', as it would get her no closer to being in range of the Brute.\n',
                         style: TextStyle(
                           fontStyle: FontStyle.italic,
                         ),
