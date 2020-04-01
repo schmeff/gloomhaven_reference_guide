@@ -543,6 +543,7 @@ class Rules {
     },
     {
       'title': 'Monster Turn',
+      'route': '/monsterTurn',
       'description': 'Monsters\' decisions are controlled by a system of action cards that automate what the monsters will do on their turn in the initiative order.' +
           ' They are not controlled by a separate player. All monsters will perform the actions listed on their ability card for the round in the order written.' +
           ' They will not move or attack unless these actions are listed on their card.\n\nNote that each type of monster can come in two ranks: normal and ' +
@@ -550,7 +551,8 @@ class Rules {
           ' statistics in the "Elite" section of the monster statistic card.'
     },
     {
-      'title': 'Order Of Action',
+      'title': 'Monster Order Of Action',
+      'route': '/monsterOrderOfAction',
       'description': 'All monsters of the same type take individual turns at the same initiative value listed on their monster ability card. All elites of a type activate first,' +
           ' then the normal monsters of that type activate. If more than one elite or normal monster of a given type is present on the board, then the monsters ' +
           'activate in ascending numerical order according to the numbers on their tokens.\n\nIn addition to determining order of action, the number on the monster' +
@@ -558,6 +560,7 @@ class Rules {
     },
     {
       'title': 'Monster Focus',
+      'route': '/monsterFocus',
       'description': 'Before performing any action on their ability card, each individual monster will focus on a specific enemy-either a character or character ' +
           'summon.\n\nA monster will focus on the enemy figure it can perform its current attack against using the least amount of movement. It finds the ' +
           'shortest possible path to get in range and line-of-sight to use its attack, and the figure that can be attacked at the end of that path is the focus.' +
@@ -576,6 +579,7 @@ class Rules {
     },
     {
       'title': 'Monster Movement',
+      'route': '/monsterMovement',
       'description': 'A monster can move on its turn if "Move±X" is part of its ability card. It can move up to a number of hexes equal to its base move value ' +
           '(found on its monster statistic card) modified by X (either positive or negative).\n\nIf a monster has a move but no attack afterward as' +
           ' part of its ability card, it will use its movement to get as close as possible to its focused target (determined as if it had a melee attack), ' +
@@ -595,6 +599,7 @@ class Rules {
     },
     {
       'title': 'Monster Interaction With Terrain',
+      'route': '/monsterInteractionWithTerrain',
       'description': 'Monsters without the Flying trait consider negative hexes (traps or hazardous terrain) to be obstacles when determining focus and movement' +
           ' unless movement through one of these hexes is the only way they can focus on a target. In this case, they will use the path moving through' +
           ' the smallest number of negative hexes possible to find a focus and suffer any consequences.\n\nExample: Even though the Tinkerer a is closer, ' +
@@ -607,6 +612,7 @@ class Rules {
     },
     {
       'title': 'Monster Attacks',
+      'route': '/monsterAttacks',
       'description': 'A monster will attack on its turn if "Attack±X" is part of its ability card. Any damage dealt is calculated from its base attack value (found on' +
           ' its monster statistic card) modified by X (either positive or negative). Monsters will always attack their focused enemies (see Monster Focus on' +
           ' pp. 29-30 for details) but if the monster can attack multiple targets, it will attack its focused enemy and as many other enemies as possible to' +
@@ -617,6 +623,7 @@ class Rules {
     },
     {
       'title': 'Other Monster Abilities',
+      'route': '/otherMonsterAbilities',
       'description': 'Healing: Monster healing functions exactly like character healing as discussed on p. 26. With a "Heal X" ability, the monster will heal themselves ' +
           'or an ally within the specified range, whichever has lost the most hit points.\n\nSummons: Monster summon abilities place new monsters on the board ' +
           'that behave exactly like the normal monsters, acting according to played monster ability cards of their type. Summoned monsters are placed in an empty' +

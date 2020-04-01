@@ -47,6 +47,13 @@ import './gainingExperience/gaining_experience.dart';
 import './characterDamage/character_damage.dart';
 import './exhaustion/exhaustion.dart';
 import './items/items.dart';
+import './monsterTurn/monster_turn.dart';
+import './monsterOrderOfAction/monster_order_of_action.dart';
+import './monsterFocus/monster_focus.dart';
+import './monsterMovement/monster_movement.dart';
+import './monsterInteractionWithTerrain/monster_interaction_with_terrain.dart';
+import './monsterAttacks/monster_attacks.dart';
+import './otherMonsterAbilities/other_monster_abilities.dart';
 
 import './rule_description.dart';
 
@@ -101,6 +108,13 @@ class Routes {
     CharacterDamage.routeName: (context) => CharacterDamage(),
     Exhaustion.routeName: (context) => Exhaustion(),
     Items.routeName: (context) => Items(),
+    MonsterTurn.routeName: (context) => MonsterTurn(),
+    MonsterOrderOfAction.routeName: (context) => MonsterOrderOfAction(),
+    MonsterFocus.routeName: (context) => MonsterFocus(),
+    MonsterMovement.routeName: (context) => MonsterMovement(),
+    MonsterInteractionWithTerrain.routeName: (context) => MonsterInteractionWithTerrain(),
+    MonsterAttacks.routeName: (context) => MonsterAttacks(),
+    OtherMonsterAbilities.routeName: (context) => OtherMonsterAbilities(),
     RuleDescription.routeName: (context) => RuleDescription(),
   };
 
