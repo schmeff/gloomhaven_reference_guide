@@ -598,7 +598,7 @@ class Rules {
           ' If it could melee attack three or more targets, it would move 3 hexes to be adjacent to all three characters.'
     },
     {
-      'title': 'Monster Interaction With Terrain',
+      'title': 'Monster Interaction With Traps',
       'route': '/monsterInteractionWithTerrain',
       'description': 'Monsters without the Flying trait consider negative hexes (traps or hazardous terrain) to be obstacles when determining focus and movement' +
           ' unless movement through one of these hexes is the only way they can focus on a target. In this case, they will use the path moving through' +
