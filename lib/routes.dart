@@ -54,6 +54,9 @@ import './monsterMovement/monster_movement.dart';
 import './monsterInteractionWithTerrain/monster_interaction_with_terrain.dart';
 import './monsterAttacks/monster_attacks.dart';
 import './otherMonsterAbilities/other_monster_abilities.dart';
+import './ambiguity/ambiguity.dart';
+import './bosses/bosses.dart';
+import './endOfRound/end_of_round.dart';
 
 import './rule_description.dart';
 
@@ -115,6 +118,9 @@ class Routes {
     MonsterInteractionWithTerrain.routeName: (context) => MonsterInteractionWithTerrain(),
     MonsterAttacks.routeName: (context) => MonsterAttacks(),
     OtherMonsterAbilities.routeName: (context) => OtherMonsterAbilities(),
+    Ambiguity.routeName: (context) => Ambiguity(),
+    Bosses.routeName: (context) => Bosses(),
+    EndOfRound.routeName: (context) => EndOfRound(),
     RuleDescription.routeName: (context) => RuleDescription(),
   };
 

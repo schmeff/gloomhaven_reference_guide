@@ -636,6 +636,7 @@ class Rules {
     },
     {
       'title': 'Ambiguity',
+      'route': '/ambiguity',
       'description':
           'If the rules ever make any monster action ambiguous because there are multiple viable hexes to which the monster could move, multiple equally ' +
               'viable targets to heal or attack, or multiple hexes a monster could push or pull a character into, the players must decide which option the ' +
@@ -643,6 +644,7 @@ class Rules {
     },
     {
       'title': 'Bosses',
+      'route': '/bosses',
       'description': 'Players will occasionally encounter bosses in their adventures. All bosses have their own stat card but act using a universal "Boss" ability' +
           ' card deck a. Note that bosses are not considered normal or elite monsters.\n\nBosses perform special actions on their turn that are summarized' +
           ' on their stat card. Explanations for more complicated abilities can be found in the Scenario Book.\n\nBosses\' stats are often based on the ' +
@@ -651,6 +653,7 @@ class Rules {
     },
     {
       'title': 'End Of Round',
+      'route': '/endOfRound',
       'description': 'Once all figures have taken a turn, the round ends and some cleanup steps may be necessary:\n\nIf a standard "2x" or "Null" attack modifier' +
           ' card was drawn from a specific modifier deck during the round, shuffle all the discards of that deck back into its draw deck.\n\nIf a monster' +
           ' ability card with a shuffle symbol was drawn at the start of the round, shuffle all discards for the corresponding monster type back into its ' +

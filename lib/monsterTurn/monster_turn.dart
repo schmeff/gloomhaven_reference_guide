@@ -133,7 +133,39 @@ class MonsterTurn extends StatelessWidget {
                     ],
                   ),
                 ),
-                const SizedBox(height:20)
+                const SizedBox(height:10),
+                RaisedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/ambiguity');
+                  },
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text(
+                        'Ambiguity',
+                        style: TextStyle(
+                            fontSize: 22, fontWeight: FontWeight.bold),
+                      )
+                    ],
+                  ),
+                ),
+                const SizedBox(height:10),
+                RaisedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/bosses');
+                  },
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text(
+                        'Bosses',
+                        style: TextStyle(
+                            fontSize: 22, fontWeight: FontWeight.bold),
+                      )
+                    ],
+                  ),
+                ),
+                const SizedBox(height:20),
               ],
             ),
           )),
