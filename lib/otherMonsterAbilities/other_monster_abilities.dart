@@ -20,8 +20,62 @@ class OtherMonsterAbilities extends StatelessWidget {
                     style: Theme.of(context).textTheme.body1,
                     children: [
                       TextSpan(
-                          text: 'A "Shield X" bonus ability gives the recipient a defender\'s bonus that reduces any incoming attack value by X. Multiple shield bonuses stack with one ' +
-                              'another and can be applied in any order. A shield bonus only applies to damage caused by an attack.\n'),
+                        text: '\nHealing: ',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                      TextSpan(
+                        text: 'Monster healing functions exactly like character healing as discussed on p. 26. With a "Heal X" ability, the monster will heal themselves ' +
+                            'or an ally within the specified range, whichever has lost the most hit points.\n',
+                      ),
+                    ],
+                  ),
+                ),
+                RichText(
+                  text: TextSpan(
+                    style: Theme.of(context).textTheme.body1,
+                    children: [
+                      TextSpan(
+                        text: 'Summons: ',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                      TextSpan(
+                        text: 'Monster summon abilities place new monsters on the board ' +
+                            'that behave exactly like the normal monsters, acting according to played monster ability cards of their type. Summoned monsters are placed in an empty' +
+                            ' hex adjacent to the summoning monster and also as close to an enemy as possible. If there are no empty adjacent hexes or there are no available standees ' +
+                            'of the summoned monster type, the summon fails. Summoned monsters never act on the round they are summoned, nor do they drop money tokens ' +
+                            'when killed.\n',
+                      ),
+                    ],
+                  ),
+                ),
+                RichText(
+                  text: TextSpan(
+                    style: Theme.of(context).textTheme.body1,
+                    children: [
+                      TextSpan(
+                        text: 'Bonus abilities: ',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                      TextSpan(
+                        text: 'Ability card bonuses are activated through actions only when the monster activates and are only active until' +
+                            ' the end of the round in which the card was drawn.\n',
+                      ),
+                    ],
+                  ),
+                ),
+                RichText(
+                  text: TextSpan(
+                    style: Theme.of(context).textTheme.body1,
+                    children: [
+                      TextSpan(
+                        text: 'Looting: ',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                      TextSpan(
+                        text: 'Monsters do not perform end-of-turn looting, but some monsters do have loot actions. ' +
+                            'In these cases, a monster will pick up all money tokens within the specified range. These money tokens are lost and are not dropped again when ' +
+                            'the looting monster is killed. Monsters are unable to loot treasure tiles.\n',
+                      ),
                     ],
                   ),
                 ),
