@@ -58,6 +58,7 @@ import './ambiguity/ambiguity.dart';
 import './bosses/bosses.dart';
 import './endOfRound/end_of_round.dart';
 import './roundTracker/round_tracker.dart';
+import './finishingAScenario/finishing_a_scenario.dart';
 
 import './rule_description.dart';
 
@@ -123,6 +124,7 @@ class Routes {
     Bosses.routeName: (context) => Bosses(),
     EndOfRound.routeName: (context) => EndOfRound(),
     RoundTracker.routeName: (context) => RoundTracker(),
+    FinishingAScenario.routeName: (context) => FinishingAScenario(),
     RuleDescription.routeName: (context) => RuleDescription(),
   };
 

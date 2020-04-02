@@ -671,6 +671,7 @@ class Rules {
     },
     {
       'title': 'Finishing A Scenario',
+      'route': '/finishingAScenario',
       'description': 'A scenario can end in one of two ways: success or failure. Once a scenario\'s success or failure conditions are triggered, ' +
           'the remainder of the round is played out, and then the scenario ends.\n\nSuccess or failure, players tally the experience their ' +
           'individual characters earned during the scenario and tally the money tokens their characters looted during the scenario and convert' +
