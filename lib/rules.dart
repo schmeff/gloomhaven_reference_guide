@@ -691,16 +691,6 @@ class Rules {
           'very important to improve a character\'s skills and abilities and should be tracked on the player\'s character sheet.\n\nIf' +
           ' the scenario was not part of a campaign, money and experience can be used as metric for gauging how well each character did.'
     },
-    {
-      'title': 'Battle Goal Cards',
-      'description':
-          'At the beginning of every scenario, each character receives two battle goal cards in secret and chooses one to keep, discarding' +
-          ' the other. If the scenario is successfully completed and the character meets the criteria of the chosen card, he or she will ' +
-          'earn a number of checkmarks as specified on the bottom of the card.\n\nCheckmarks are used to enhance a player\'s attack modifier' +
-          ' deck. If the scenario resulted in failure, the character receives nothing from his or her battle goal card, regardless of whether' +
-          ' the goal was achieved.\n\nPlayers can keep track of their battle goal progress using notes if necessary. Players should keep their ' +
-          'battle goals secret from one another until the scenario is over.'
-    },
   ];
 
   List<Map<String, Object>> get getRules {
