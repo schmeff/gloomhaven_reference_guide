@@ -57,6 +57,7 @@ import './otherMonsterAbilities/other_monster_abilities.dart';
 import './ambiguity/ambiguity.dart';
 import './bosses/bosses.dart';
 import './endOfRound/end_of_round.dart';
+import './roundTracker/round_tracker.dart';
 
 import './rule_description.dart';
 
@@ -121,6 +122,7 @@ class Routes {
     Ambiguity.routeName: (context) => Ambiguity(),
     Bosses.routeName: (context) => Bosses(),
     EndOfRound.routeName: (context) => EndOfRound(),
+    RoundTracker.routeName: (context) => RoundTracker(),
     RuleDescription.routeName: (context) => RuleDescription(),
   };
 

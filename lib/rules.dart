@@ -663,6 +663,7 @@ class Rules {
     },
     {
       'title': 'Round Tracker',
+      'route': '/roundTracker',
       'description':
           'Some scenarios may require players to keep track of what round it is. A round track can be found at the top of the elemental' +
               ' infusion table for this purpose. At the end of every round, simply move the tracker token forward one space. Note that' +
