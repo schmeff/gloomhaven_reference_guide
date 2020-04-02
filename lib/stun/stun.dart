@@ -22,9 +22,17 @@ class Stun extends StatelessWidget {
                   ),
                   margin: EdgeInsets.only(bottom: 15, top: 15),
                 ),
-                Text('If a figure is stunned, it cannot perform any abilities or use items on its turn except to perform a long rest (in the case of characters).' +
-                    ' At the end of its next turn, the stun token is removed. Players must still play two cards or rest on their turn, and if a player plays ' +
-                    'two cards while stunned, the actions played are not used, and the cards are simply discarded.\n'),
+                RichText(
+                  text: TextSpan(
+                    style: Theme.of(context).textTheme.body1,
+                    children: [
+                      TextSpan(
+                          text: 'If a figure is stunned, it cannot perform any abilities or use items on its turn except to perform a long rest (in the case of characters).' +
+                              ' At the end of its next turn, the stun token is removed. Players must still play two cards or rest on their turn, and if a player plays ' +
+                              'two cards while stunned, the actions played are not used, and the cards are simply discarded.\n'),
+                    ],
+                  ),
+                ),
               ],
             ),
           )),

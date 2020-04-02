@@ -23,9 +23,16 @@ class DifficultTerrain extends StatelessWidget {
                   ),
                   margin: EdgeInsets.only(bottom: 15, top: 15),
                 ),
-                RuleText(
-                    'It takes a figure two normal movement points to enter a hex with difficult terrain. ' +
-                        'Flying, Jump, and forced movements are unaffected by difficult terrain.'),
+                RichText(
+                  text: TextSpan(
+                    style: Theme.of(context).textTheme.body1,
+                    children: [
+                      TextSpan(
+                          text: 'It takes a figure two normal movement points to enter a hex with difficult terrain. ' +
+                              'Flying, Jump, and forced movements are unaffected by difficult terrain.\n'),
+                    ],
+                  ),
+                ),
               ],
             ),
           )),

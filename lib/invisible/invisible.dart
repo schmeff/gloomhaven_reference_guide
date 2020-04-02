@@ -22,9 +22,17 @@ class Invisible extends StatelessWidget {
                   ),
                   margin: EdgeInsets.only(bottom: 15, top: 15),
                 ),
-                Text('If a figure is invisible, it cannot be focused on or targeted by an enemy. Invisibility does not affect a figure\'s interactions' +
-                    ' with his or her allies. At the end of its next turn, the invisible token is removed. Monsters treat invisible characters exactly ' +
-                    'as if they were obstacles.\n'),
+                RichText(
+                  text: TextSpan(
+                    style: Theme.of(context).textTheme.body1,
+                    children: [
+                      TextSpan(
+                          text: 'If a figure is invisible, it cannot be focused on or targeted by an enemy. Invisibility does not affect a figure\'s interactions' +
+                              ' with his or her allies. At the end of its next turn, the invisible token is removed. Monsters treat invisible characters exactly ' +
+                              'as if they were obstacles.\n'),
+                    ],
+                  ),
+                ),
               ],
             ),
           )),

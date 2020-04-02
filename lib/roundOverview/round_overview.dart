@@ -16,17 +16,32 @@ class RoundOverview extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: <Widget>[
-                RuleText(
-                    '\nA scenario consists of a series of rounds that are played until players either meet the victory conditions of the ' +
-                        'scenario or fail the scenario. A round consists of the following steps:\n'),
+                RichText(
+                  text: TextSpan(
+                    style: Theme.of(context).textTheme.body1,
+                    children: [
+                      TextSpan(
+                          text: '\nA scenario consists of a series of rounds that are played until players either meet the victory conditions of the ' +
+                              'scenario or fail the scenario. A round consists of the following steps:\n'),
+                    ],
+                  ),
+                ),
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     RuleText('1. '),
                     Flexible(
-                      child: RuleText('Card selection: Each player will ' +
-                          'either select two cards from his or her hand to play or declare he or she is performing a long rest action for ' +
-                          'the round.\n'),
+                      child: RichText(
+                        text: TextSpan(
+                          style: Theme.of(context).textTheme.body1,
+                          children: [
+                            TextSpan(
+                                text: 'Card selection: Each player will ' +
+                                    'either select two cards from his or her hand to play or declare he or she is performing a long rest action for ' +
+                                    'the round.\n'),
+                          ],
+                        ),
+                      ),
                     ),
                   ],
                 ),
@@ -35,10 +50,17 @@ class RoundOverview extends StatelessWidget {
                   children: <Widget>[
                     RuleText('2. '),
                     Flexible(
-                      child: RuleText(
-                          'Determining initiative: Players reveal their cards for the round, and an ability card for each ' +
-                              'monster type currently in play is also revealed. An initiative order is then determined based on the initiative ' +
-                              'values of these revealed cards.\n'),
+                      child: RichText(
+                        text: TextSpan(
+                          style: Theme.of(context).textTheme.body1,
+                          children: [
+                            TextSpan(
+                                text: 'Determining initiative: Players reveal their cards for the round, and an ability card for each ' +
+                                    'monster type currently in play is also revealed. An initiative order is then determined based on the initiative ' +
+                                    'values of these revealed cards.\n'),
+                          ],
+                        ),
+                      ),
                     ),
                   ],
                 ),
@@ -47,10 +69,17 @@ class RoundOverview extends StatelessWidget {
                   children: <Widget>[
                     RuleText('3. '),
                     Flexible(
-                      child: RuleText(
-                          'Character and monster turns: Starting with the lowest initiative, players ' +
-                              'and monsters will act out their turns, performing the actions on their cards, possibly modified by character ' +
-                              'item cards.\n'),
+                      child: RichText(
+                        text: TextSpan(
+                          style: Theme.of(context).textTheme.body1,
+                          children: [
+                            TextSpan(
+                                text: 'Character and monster turns: Starting with the lowest initiative, players ' +
+                                    'and monsters will act out their turns, performing the actions on their cards, possibly modified by character ' +
+                                    'item cards.\n'),
+                          ],
+                        ),
+                      ),
                     ),
                   ],
                 ),
@@ -59,8 +88,16 @@ class RoundOverview extends StatelessWidget {
                   children: <Widget>[
                     RuleText('4. '),
                     Flexible(
-                      child: RuleText(
-                          'End of Round: Some cleanup may be required at the end of the round.'),
+                      child: RichText(
+                        text: TextSpan(
+                          style: Theme.of(context).textTheme.body1,
+                          children: [
+                            TextSpan(
+                                text:
+                                    'End of Round: Some cleanup may be required at the end of the round.\n'),
+                          ],
+                        ),
+                      ),
                     ),
                   ],
                 ),

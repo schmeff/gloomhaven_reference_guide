@@ -15,10 +15,18 @@ class AttackEffects extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: <Widget>[
-                Text('\nAttack abilities will often have effects that increase their power. If an attack effect is listed on an ability card after an attack, the target ' +
-                    '(or targets) of the attack is subject to the additional effect as well, after damage from the attack is resolved. Attack effects are applied' +
-                    ' regardless of whether the corresponding attack does damage. These effects (except experience gains) are optional and can be skipped. Some character' +
-                    ' actions can also apply these effects without an attack, and in such cases the target of the effect is written on the ability card.\n'),
+                RichText(
+                  text: TextSpan(
+                    style: Theme.of(context).textTheme.body1,
+                    children: [
+                      TextSpan(
+                          text: '\nAttack abilities will often have effects that increase their power. If an attack effect is listed on an ability card after an attack, the target ' +
+                              '(or targets) of the attack is subject to the additional effect as well, after damage from the attack is resolved. Attack effects are applied' +
+                              ' regardless of whether the corresponding attack does damage. These effects (except experience gains) are optional and can be skipped. Some character' +
+                              ' actions can also apply these effects without an attack, and in such cases the target of the effect is written on the ability card.\n'),
+                    ],
+                  ),
+                ),
                 RaisedButton(
                   onPressed: () {
                     Navigator.pushNamed(context, '/push');
@@ -36,9 +44,7 @@ class AttackEffects extends StatelessWidget {
                       Text(
                         'Push',
                         style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.bold
-                        ),
+                            fontSize: 22, fontWeight: FontWeight.bold),
                       )
                     ],
                   ),
@@ -61,9 +67,7 @@ class AttackEffects extends StatelessWidget {
                       Text(
                         'Pull',
                         style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.bold
-                        ),
+                            fontSize: 22, fontWeight: FontWeight.bold),
                       )
                     ],
                   ),
@@ -86,9 +90,7 @@ class AttackEffects extends StatelessWidget {
                       Text(
                         'Pierce',
                         style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.bold
-                        ),
+                            fontSize: 22, fontWeight: FontWeight.bold),
                       )
                     ],
                   ),
@@ -111,9 +113,7 @@ class AttackEffects extends StatelessWidget {
                       Text(
                         'Add Target',
                         style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.bold
-                        ),
+                            fontSize: 22, fontWeight: FontWeight.bold),
                       )
                     ],
                   ),

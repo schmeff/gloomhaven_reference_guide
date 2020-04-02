@@ -22,8 +22,16 @@ class Strengthen extends StatelessWidget {
                   ),
                   margin: EdgeInsets.only(bottom: 15, top: 15),
                 ),
-                Text(
-                    'If a figure is strengthened, it gains Advantage on all of its attacks. At the end of its next turn, the strengthen token is removed.\n'),
+                RichText(
+                  text: TextSpan(
+                    style: Theme.of(context).textTheme.body1,
+                    children: [
+                      TextSpan(
+                          text:
+                              'If a figure is strengthened, it gains Advantage on all of its attacks. At the end of its next turn, the strengthen token is removed.\n'),
+                    ],
+                  ),
+                ),
               ],
             ),
           )),

@@ -15,14 +15,28 @@ class Conditions extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: <Widget>[
-                Text('\nCertain abilities may apply conditions to their targets. When a condition is applied to a figure (except curse and bless), the' +
+                RichText(
+                  text: TextSpan(
+                    style: Theme.of(context).textTheme.body1,
+                    children: [
+                      TextSpan(text: '\nCertain abilities may apply conditions to their targets. When a condition is applied to a figure (except curse and bless), the' +
                     ' respective token is placed on the stat sleeve in the section corresponding the number on the specific monster\'s standee to' +
                     ' signify the effect. The condition remains on the figure until the requirements for removing the specific effect are met. Only' +
                     ' one of each condition type may be applied to any single figure at a time, however conditions can be reapplied to refresh their' +
                     ' duration.\n'),
-                Text('The following are negative conditions. If an ability has the name of one of these conditions contained within it,' +
+                    ],
+                  ),
+                ),
+                RichText(
+                  text: TextSpan(
+                    style: Theme.of(context).textTheme.body1,
+                    children: [
+                      TextSpan(text: 'The following are negative conditions. If an ability has the name of one of these conditions contained within it,' +
                     ' then the condition is applied to all targets of the ability, after the main effect of the ability is applied. Conditions are' +
                     ' applied regardless of whether the corresponding attack does damage.\n'),
+                    ],
+                  ),
+                ),
                 RaisedButton(
                   onPressed: () {
                     Navigator.pushNamed(context, '/poison');
@@ -184,9 +198,15 @@ class Conditions extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 20),
-                Text(
-                    'The following are positive conditions. Figures can apply positive conditions to themselves or allies through specific actions. Positivice conditions cannot' +
+                RichText(
+                  text: TextSpan(
+                    style: Theme.of(context).textTheme.body1,
+                    children: [
+                      TextSpan(text: 'The following are positive conditions. Figures can apply positive conditions to themselves or allies through specific actions. Positivice conditions cannot' +
                         ' be prematurely removed.\n'),
+                    ],
+                  ),
+                ),
                 RaisedButton(
                   onPressed: () {
                     Navigator.pushNamed(context, '/invisible');

@@ -23,10 +23,17 @@ class Corridors extends StatelessWidget {
                   ),
                   margin: EdgeInsets.only(bottom: 15, top: 15),
                 ),
-                RuleText(
-                    'A corridor is placed on the connection of two map tiles to ' +
-                        'cover the walls and create a single room out of multiple map tiles. ' +
-                        'Corridors act like normal empty hexes.'),
+                RichText(
+                  text: TextSpan(
+                    style: Theme.of(context).textTheme.body1,
+                    children: [
+                      TextSpan(
+                          text: 'A corridor is placed on the connection of two map tiles to ' +
+                              'cover the walls and create a single room out of multiple map tiles. ' +
+                              'Corridors act like normal empty hexes.\n'),
+                    ],
+                  ),
+                ),
               ],
             ),
           )),

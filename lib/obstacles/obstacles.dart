@@ -23,12 +23,20 @@ class Obstacles extends StatelessWidget {
                   ),
                   margin: EdgeInsets.only(bottom: 15, top: 15),
                 ),
-                RuleText('Obstacles have varying artwork, but they all have the same function: figures cannot ' +
-                    'move through obstacles with a normal movement, but can move through them with a Flying' +
-                    ' or Jump movement. Obstacles do not hinder ranged attacks. It is possible for ' +
-                    'certain character abilities to create or move obstacles. When doing so, players can' +
-                    ' never completely cut off one area of the scenario map from another, such that the ' +
-                    'area cannot be moved into without going through the obstacles.'),
+                RichText(
+                  text: TextSpan(
+                    style: Theme.of(context).textTheme.body1,
+                    children: [
+                      TextSpan(
+                          text: 'Obstacles have varying artwork, but they all have the same function: figures cannot ' +
+                              'move through obstacles with a normal movement, but can move through them with a Flying' +
+                              ' or Jump movement. Obstacles do not hinder ranged attacks. It is possible for ' +
+                              'certain character abilities to create or move obstacles. When doing so, players can' +
+                              ' never completely cut off one area of the scenario map from another, such that the ' +
+                              'area cannot be moved into without going through the obstacles.\n'),
+                    ],
+                  ),
+                ),
               ],
             ),
           )),

@@ -23,9 +23,17 @@ class Move extends StatelessWidget {
                   ),
                   margin: EdgeInsets.only(bottom: 15, top: 15),
                 ),
-                RuleText('A "Move X" ability allows a character to move up to X number of hexes on the map. Figures (characters and monsters) can move through allies, ' +
-                    'but cannot move through enemies or obstacles. Traps and other terrain effects of hexes must be resolved when a figure enters them with normal' +
-                    ' movement. A figure cannot end its movement in the same hex as another figure. Figures can never move through walls.\n'),
+                RichText(
+                  text: TextSpan(
+                    style: Theme.of(context).textTheme.body1,
+                    children: [
+                      TextSpan(
+                          text: 'A "Move X" ability allows a character to move up to X number of hexes on the map. Figures (characters and monsters) can move through allies, ' +
+                              'but cannot move through enemies or obstacles. Traps and other terrain effects of hexes must be resolved when a figure enters them with normal' +
+                              ' movement. A figure cannot end its movement in the same hex as another figure. Figures can never move through walls.\n'),
+                    ],
+                  ),
+                ),
                 Container(
                   width: 50,
                   child: Image(
@@ -33,9 +41,17 @@ class Move extends StatelessWidget {
                   ),
                   margin: EdgeInsets.only(bottom: 15),
                 ),
-                RuleText('Some Move abilities' +
-                    ' are specified as a "Jump". Move X (Jump) allows the character to ignore all figures and terrain effects during their movement. However,' +
-                    ' the last hex of a jump is still considered a normal movement, and so must obey the normal movement rules above.\n'),
+                RichText(
+                  text: TextSpan(
+                    style: Theme.of(context).textTheme.body1,
+                    children: [
+                      TextSpan(
+                          text: 'Some Move abilities' +
+                              ' are specified as a "Jump". Move X (Jump) allows the character to ignore all figures and terrain effects during their movement. However,' +
+                              ' the last hex of a jump is still considered a normal movement, and so must obey the normal movement rules above.\n'),
+                    ],
+                  ),
+                ),
                 Container(
                   width: 50,
                   child: Image(
@@ -43,12 +59,20 @@ class Move extends StatelessWidget {
                   ),
                   margin: EdgeInsets.only(bottom: 15),
                 ),
-                RuleText('Some figures may also' +
-                    ' have the "Flying" special trait. This allows figures to completely ignore any figures and terrain tiles during any part of their movement,' +
-                    ' including the last hex, except that they still must end their movement in an unoccupied hex (no figures present). This includes forced ' +
-                    'movement like push or pull. If a figure loses its Flying trait while occupying an obstacle hex, it takes damage as if it had sprung a damage' +
-                    ' trap and then moves immediately to the nearest empty hex (no figures, tokens, or overlay tiles of any kind present except corridors, pressure' +
-                    ' plates, and open doors).\n'),
+                RichText(
+                  text: TextSpan(
+                    style: Theme.of(context).textTheme.body1,
+                    children: [
+                      TextSpan(
+                          text: 'Some figures may also' +
+                              ' have the "Flying" special trait. This allows figures to completely ignore any figures and terrain tiles during any part of their movement,' +
+                              ' including the last hex, except that they still must end their movement in an unoccupied hex (no figures present). This includes forced ' +
+                              'movement like push or pull. If a figure loses its Flying trait while occupying an obstacle hex, it takes damage as if it had sprung a damage' +
+                              ' trap and then moves immediately to the nearest empty hex (no figures, tokens, or overlay tiles of any kind present except corridors, pressure' +
+                              ' plates, and open doors).\n'),
+                    ],
+                  ),
+                ),
               ],
             ),
           )),

@@ -22,8 +22,16 @@ class Bless extends StatelessWidget {
                   ),
                   margin: EdgeInsets.only(bottom: 15, top: 15),
                 ),
-                Text('If a figure is blessed, it must shuffle a bless card into its remaining attack modifier deck. When this card is revealed through ' +
-                    'one of the figure\'s attacks, it is removed from the deck instead of being placed into the attack modifier discard pile.\n'),
+                RichText(
+                  text: TextSpan(
+                    style: Theme.of(context).textTheme.body1,
+                    children: [
+                      TextSpan(
+                          text: 'If a figure is blessed, it must shuffle a bless card into its remaining attack modifier deck. When this card is revealed through ' +
+                              'one of the figure\'s attacks, it is removed from the deck instead of being placed into the attack modifier discard pile.\n'),
+                    ],
+                  ),
+                ),
                 Container(
                   width: 200,
                   child: Image(

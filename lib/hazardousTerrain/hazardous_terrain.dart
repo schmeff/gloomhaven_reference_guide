@@ -23,14 +23,29 @@ class HazardousTerrain extends StatelessWidget {
                   ),
                   margin: EdgeInsets.only(bottom: 15, top: 15),
                 ),
-                RuleText(
-                    'If a figure enters a hex with hazardous terrain via normal or forced movement,' +
-                        ' each hex will inflict half the damage of a trap (rounded down). Flying and Jump' +
-                        ' movements are unaffected by hazardous terrain.'),
-                RuleText('\nUnlike traps, hazardous ' +
-                    'terrain does not get removed after its effect is applied, but instead remains ' +
-                    'on the board indefinitely. Starting a turn on or exiting these hexes does not ' +
-                    'cause additional damage.'),
+                RichText(
+                  text: TextSpan(
+                    style: Theme.of(context).textTheme.body1,
+                    children: [
+                      TextSpan(
+                          text: 'If a figure enters a hex with hazardous terrain via normal or forced movement,' +
+                              ' each hex will inflict half the damage of a trap (rounded down). Flying and Jump' +
+                              ' movements are unaffected by hazardous terrain.\n'),
+                    ],
+                  ),
+                ),
+                RichText(
+                  text: TextSpan(
+                    style: Theme.of(context).textTheme.body1,
+                    children: [
+                      TextSpan(
+                          text: 'Unlike traps, hazardous ' +
+                              'terrain does not get removed after its effect is applied, but instead remains ' +
+                              'on the board indefinitely. Starting a turn on or exiting these hexes does not ' +
+                              'cause additional damage.\n'),
+                    ],
+                  ),
+                ),
               ],
             ),
           )),
