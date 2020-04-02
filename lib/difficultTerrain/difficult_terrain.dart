@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../common/rule_text.dart';
 import '../common/rule_title.dart';
 
 class DifficultTerrain extends StatelessWidget {

@@ -22,9 +22,17 @@ class Wound extends StatelessWidget {
                   ),
                   margin: EdgeInsets.only(bottom: 15, top: 15),
                 ),
-                Text('If a figure is wounded, it suffers one point of damage at the start of each of its turns. If a Heal ability is used on a wounded' +
-                    ' figure, the wound token is removed and the Heal continues normally. If a figure is both poisoned and wounded, a Heal ability would' +
-                    ' remove both conditions but have no other effect.\n'),
+                RichText(
+                  text: TextSpan(
+                    style: Theme.of(context).textTheme.body1,
+                    children: [
+                      TextSpan(
+                          text: 'If a figure is wounded, it suffers one point of damage at the start of each of its turns. If a Heal ability is used on a wounded' +
+                              ' figure, the wound token is removed and the Heal continues normally. If a figure is both poisoned and wounded, a Heal ability would' +
+                              ' remove both conditions but have no other effect.\n'),
+                    ],
+                  ),
+                ),
               ],
             ),
           )),

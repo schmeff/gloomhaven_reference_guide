@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../common/rule_text.dart';
 import '../common/rule_title.dart';
 import './level_modification_table.dart';
 import './scenario_level_table.dart';

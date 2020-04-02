@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../common/rule_title.dart';
-import '../common/reference_letter_image.dart';
 
 class EndOfRound extends StatelessWidget {
   static const routeName = '/endOfRound';
