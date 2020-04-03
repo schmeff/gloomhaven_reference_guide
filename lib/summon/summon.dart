@@ -113,8 +113,7 @@ class Summon extends StatelessWidget {
                         ),
                       ),
                       TextSpan(
-                          text: ' (see Monster Turn on pp. 29-32 ' +
-                              'for details) and using the player\'s attack modifier deck to perform its attacks.\n'),
+                          text: ' and using the player\'s attack modifier deck to perform its attacks.\n'),
                     ],
                   ),
                 ),

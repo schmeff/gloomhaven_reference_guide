@@ -29,8 +29,7 @@ class MonsterAttacks extends StatelessWidget {
                       ),
                       TextSpan(
                           text: ' is part of its ability card. Any damage dealt is calculated from its base attack value (found on' +
-                              ' its monster statistic card) modified by X (either positive or negative). Monsters will always attack their focused enemies (see Monster Focus on' +
-                              ' pp. 29-30 for details) but if the monster can attack multiple targets, it will attack its focused enemy and as many other enemies as possible to '),
+                              ' its monster statistic card) modified by X (either positive or negative). Monsters will always attack their focused enemies but if the monster can attack multiple targets, it will attack its focused enemy and as many other enemies as possible to '),
                       TextSpan(
                         text: 'maximum effect',
                         style: TextStyle(

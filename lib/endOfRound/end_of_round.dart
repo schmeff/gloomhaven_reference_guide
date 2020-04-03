@@ -219,7 +219,7 @@ class EndOfRound extends StatelessWidget {
                             ),
                             TextSpan(
                               text:
-                                  ' (see Resting on p. 17 for details) if they are able.\n',
+                                  'if they are able.\n',
                             ),
                           ],
                         ),
