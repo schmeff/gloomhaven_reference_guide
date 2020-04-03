@@ -38,7 +38,16 @@ class RevealingARoom extends StatelessWidget {
                               'them now. Once the revealing character\'s turn ends, the initiative values of all monsters in the new room are reviewed, and any monster type ' +
                               'that has a lower initiative value than the revealing character (i.e., they should have acted earlier in the round) must immediately act out ' +
                               'their turn (in normal initiative order in case of multiple monster types in this situation). This ensures that all monsters revealed in the new ' +
-                              'room will always take a turn in the round in which they are revealed.\n'),
+                              'room will '),
+                      TextSpan(
+                        text: 'always',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text:
+                              ' take a turn in the round in which they are revealed.\n'),
                     ],
                   ),
                 ),

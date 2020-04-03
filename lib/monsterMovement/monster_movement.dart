@@ -20,8 +20,15 @@ class MonsterMovement extends StatelessWidget {
                   text: TextSpan(
                     style: Theme.of(context).textTheme.body1,
                     children: [
+                      TextSpan(text: '\nA monster can move on its turn if '),
                       TextSpan(
-                          text: 'A monster can move on its turn if "Move±X" is part of its ability card. It can move up to a number of hexes equal to its base move value ' +
+                        text: '"Move±X"',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text: ' is part of its ability card. It can move up to a number of hexes equal to its base move value ' +
                               '(found on its monster statistic card) modified by X (either positive or negative). If a monster has a move but no attack afterward as' +
                               ' part of its ability card, it will use its movement to get as close as possible to its focused target (determined as if it had a melee attack), ' +
                               'moving along the shortest possible path to enter a hex adjacent to its focused enemy.\n'),
@@ -34,9 +41,32 @@ class MonsterMovement extends StatelessWidget {
                     children: [
                       TextSpan(
                           text: 'If a monster has an attack ability after its movement,' +
-                              ' it will move the least number of hexes possible in such a way as to attack its focused enemy with maximum effect. If it is a single-target' +
-                              ' melee attack, it will simply move toward the nearest hex adjacent to its focus to attack. If it is a multi-target attack, it will move toward ' +
-                              'a position where its attack will hit its focused enemy and as many other enemies as possible.\n'),
+                              ' it will move the least number of hexes possible in such a way as to attack its focused enemy with '),
+                      TextSpan(
+                        text: 'maximum effect',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(text: '. If it is a '),
+                      TextSpan(
+                        text: 'single-target melee',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text:
+                              ' attack, it will simply move toward the nearest hex adjacent to its focus to attack. If it is a '),
+                      TextSpan(
+                        text: 'multi-target attack',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text:
+                              ', it will move toward a position where its attack will hit its focused enemy and as many other enemies as possible.\n'),
                     ],
                   ),
                 ),
@@ -45,8 +75,15 @@ class MonsterMovement extends StatelessWidget {
                     style: Theme.of(context).textTheme.body1,
                     children: [
                       TextSpan(
-                          text: 'If the monster is performing a ranged attack,' +
-                              ' it will only move toward a hex where it is within range to perform its best possible attack. A monster will also move away from its focused ' +
+                          text: 'If the monster is performing a '),
+                      TextSpan(
+                        text: 'ranged',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text: ' attack, it will only move toward a hex where it is within range to perform its best possible attack. A monster will also move away from its focused ' +
                               'enemy until it can perform the ranged attack without Disadvantage. When forced to choose, a monster will prioritize losing Disadvantage on its' +
                               ' focused enemy over maximizing its attack on secondary targets. Even if a monster cannot move into attack range, it will still use its movement' +
                               ' to get as close as possible to its focus.\n'),
@@ -94,7 +131,8 @@ class MonsterMovement extends StatelessWidget {
                         ),
                       ),
                       TextSpan(
-                        text: ' can perform a "Move 3" ability. It focuses on the Brute ',
+                        text:
+                            ' can perform a "Move 3" ability. It focuses on the Brute ',
                         style: TextStyle(
                           fontStyle: FontStyle.italic,
                         ),
@@ -105,7 +143,7 @@ class MonsterMovement extends StatelessWidget {
                       TextSpan(
                         text:
                             ', since he is the closest enemy. If the monster had a ranged attack, it would remain in its current hex and attack the Brute. If it had a single-target melee attack' +
-                            ', it would move 1 hex ',
+                                ', it would move 1 hex ',
                         style: TextStyle(
                           fontStyle: FontStyle.italic,
                         ),
@@ -117,7 +155,8 @@ class MonsterMovement extends StatelessWidget {
                         ),
                       ),
                       TextSpan(
-                        text: ' to be adjacent to the Brute and attack. If it could attack two targets with a melee attack, it would move 2 hexes ',
+                        text:
+                            ' to be adjacent to the Brute and attack. If it could attack two targets with a melee attack, it would move 2 hexes ',
                         style: TextStyle(
                           fontStyle: FontStyle.italic,
                         ),
@@ -129,7 +168,8 @@ class MonsterMovement extends StatelessWidget {
                         ),
                       ),
                       TextSpan(
-                        text: ' to be adjacent to both the Brute and the Tinkerer. If it could melee attack three or more targets, it would move 3 hexes  ',
+                        text:
+                            ' to be adjacent to both the Brute and the Tinkerer. If it could melee attack three or more targets, it would move 3 hexes  ',
                         style: TextStyle(
                           fontStyle: FontStyle.italic,
                         ),
@@ -141,7 +181,8 @@ class MonsterMovement extends StatelessWidget {
                         ),
                       ),
                       TextSpan(
-                        text: ' to be adjacent to be adjacent to all three characters.\n',
+                        text:
+                            ' to be adjacent to be adjacent to all three characters.\n',
                         style: TextStyle(
                           fontStyle: FontStyle.italic,
                         ),

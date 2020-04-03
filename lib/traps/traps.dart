@@ -27,14 +27,53 @@ class Traps extends StatelessWidget {
                     style: Theme.of(context).textTheme.body1,
                     children: [
                       TextSpan(
-                          text: 'A trap is sprung when a figure enters its hex with normal or forced' +
-                              ' movement. Flying and Jump movements are unaffected by traps. When a ' +
+                          text:
+                              'A trap is sprung when a figure enters its hex with normal or forced' +
+                                  ' movement. Flying '),
+                      WidgetSpan(
+                        child: Image(
+                          image: AssetImage('images/fly_icon.png'),
+                          width: 22,
+                        ),
+                      ),
+                      TextSpan(text: 'and Jump '),
+                      WidgetSpan(
+                        child: Image(
+                          image: AssetImage('images/jump_icon.png'),
+                          width: 22,
+                        ),
+                      ),
+                      TextSpan(
+                          text: ' movements are unaffected by traps. When a ' +
                               'trap is sprung, it inflicts some negative effect on the figure who ' +
-                              'sprung it and then it is removed from the board. A trap can also be disarmed' +
+                              'sprung it and then it is '),
+                      TextSpan(
+                        text: 'removed from the board',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text: '. A trap can also be disarmed' +
                               ' through specific actions to remove it from the board without suffering its ' +
                               'negative effects. Trap effects are varied and are specified in the Scenario Book. ' +
-                              'If part of a trap\'s effect is listed as "damage", the trap will inflict 2+L' +
-                              ' damage on the affected figure, where L is the scenario level.\n'),
+                              'If part of a trap\'s effect is listed as "damage", the trap will inflict '),
+                      TextSpan(
+                        text: '2+L damage',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text: ' on the affected figure, where L is the '),
+                      TextSpan(
+                        text: 'scenario level',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text: '.\n'),
                     ],
                   ),
                 ),

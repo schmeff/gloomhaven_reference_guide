@@ -63,8 +63,15 @@ class GainingExperience extends StatelessWidget {
                       ),
                       TextSpan(
                           text: ' (i.e., when the character token moves off' +
-                              ' that slot). Characters do not automatically gain experience from killing monsters. Only using specific actions awards ' +
-                              'experience.\n'),
+                              ' that slot). '),
+                      TextSpan(
+                        text:
+                            'Characters do not automatically gain experience from killing monsters. Only using specific actions awards ' +
+                                'experience.\n',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ],
                   ),
                 ),
@@ -99,7 +106,8 @@ class GainingExperience extends StatelessWidget {
                     Expanded(
                       child: Container(
                         child: Image(
-                          image: AssetImage('images/experience_tracking_dial.png'),
+                          image:
+                              AssetImage('images/experience_tracking_dial.png'),
                         ),
                         margin: EdgeInsets.only(bottom: 15, top: 15),
                       ),

@@ -21,7 +21,23 @@ class ElementalInfusions extends StatelessWidget {
                     style: Theme.of(context).textTheme.body1,
                     children: [
                       TextSpan(
-                          text: '\nSome abilities have an elemental affinity associated with them (either Fire, Ice, Air, Earth, Light, or Dark). If any of these symbols' +
+                          text:
+                              '\nSome abilities have an elemental affinity associated with them (either '),
+                      TextSpan(
+                        text: 'Fire, Ice, Air, Earth, Light',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(text: ', or '),
+                      TextSpan(
+                        text: 'Dark',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text: '). If any of these symbols' +
                               ' is visible by itself in an action\'s description '),
                       WidgetSpan(
                         child: ReferenceLetterImage("a"),
@@ -29,7 +45,14 @@ class ElementalInfusions extends StatelessWidget {
                       TextSpan(
                           text: ', it means that by performing any part of the action, the figure must infuse the ' +
                               'battlefield with that element. This is represented by moving the corresponding element\'s token to the "Strong" column of the elemental' +
-                              ' infusion table at the end of the turn in which the ability was used.\n'),
+                              ' infusion table '),
+                      TextSpan(
+                        text: 'at the end of the turn',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(text: ' in which the ability was used.\n'),
                     ],
                   ),
                 ),
@@ -64,11 +87,30 @@ class ElementalInfusions extends StatelessWidget {
                     Expanded(
                       flex: 1,
                       child: RichText(
-                        text: TextSpan(
-                            style: Theme.of(context).textTheme.body1,
-                            text: '\n\nAt the end of every round, however, all elemental infusions will' +
-                                ' wane, moving one step to the left in the table, from "Strong" to "Waning" or from "Waning" to "Inert".\n'),
-                      ),
+                          text: TextSpan(
+                        style: Theme.of(context).textTheme.body1,
+                        children: [
+                          TextSpan(
+                              text:
+                                  '\n\nAt the end of every round, however, all elemental infusions will wane, moving '),
+                          TextSpan(
+                            text: 'one step',
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          TextSpan(
+                              text:
+                                  ' to the left in the table, from "Strong" to "Waning" '),
+                          TextSpan(
+                            text: 'or',
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          TextSpan(text: ' from "Waning" to "Inert".\n'),
+                        ],
+                      )),
                     ),
                     Expanded(
                       flex: 1,
@@ -98,9 +140,26 @@ class ElementalInfusions extends StatelessWidget {
                       TextSpan(
                           text: ', followed by a' +
                               ' colon and how the ability is augmented if the element is consumed. If an ability is used that consumes an element and the corresponding' +
-                              ' element token is in the Strong or Waning column, that element token may be used to augment the ability by moving the token to the Inert column.' +
-                              ' A single icon cannot be used to consume more than one infusion, and it is not possible to create an element and consume it on the same turn,' +
-                              ' but it may be consumed by anyone with a later turn in the initiative order of the same round.'),
+                              ' element token is in the Strong or Waning column, that element token '),
+                      TextSpan(
+                        text: 'may',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text: ' be used to augment the ability by moving the token to the Inert column.' +
+                              ' A single icon cannot be used to consume more than one infusion, and '),
+                      TextSpan(
+                        text:
+                            'it is not possible to create an element and consume it on the same turn',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text:
+                              ', but it may be consumed by anyone with a later turn in the initiative order of the same round.'),
                     ],
                   ),
                 ),
@@ -148,11 +207,22 @@ class ElementalInfusions extends StatelessWidget {
                     Expanded(
                       flex: 3,
                       child: RichText(
-                        text: TextSpan(
-                            style: Theme.of(context).textTheme.body1,
-                            text: 'This multi-colored circle represents any single one of the six elements. If this symbol is present on a monster\'s ability card, the players' +
-                                ' choose which element is created or consumed.'),
-                      ),
+                          text: TextSpan(
+                        style: Theme.of(context).textTheme.body1,
+                        children: [
+                          TextSpan(
+                              text: 'This multi-colored circle represents '),
+                          TextSpan(
+                            text: 'any single one',
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          TextSpan(
+                              text: ' of the six elements. If this symbol is present on a monster\'s ability card, the players' +
+                                  ' choose which element is created or consumed.')
+                        ],
+                      )),
                     ),
                   ],
                 ),

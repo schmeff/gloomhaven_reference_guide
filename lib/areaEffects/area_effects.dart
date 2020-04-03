@@ -22,8 +22,14 @@ class AreaEffects extends StatelessWidget {
                     children: [
                       TextSpan(
                           text: '\nSome attacks and other abilities allow figures to target multiple hexes or multiple targets at the same time. In these cases, the area of' +
-                              ' effect for the ability is shown on the ability card. Note that any rotational orientation of the depicted diagram is valid. Also note that ' +
-                              'each target constitutes a separate attack (drawing its own attack modifier card), but all attacks together make up a single attack action.\n'),
+                              ' effect for the ability is shown on the ability card. '),
+                      TextSpan(
+                        text: 'Note that any rotational orientation of the depicted diagram is valid. Also note that ' +
+                            'each target constitutes a separate attack (drawing its own attack modifier card), but all attacks together make up a single attack action.\n',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ],
                   ),
                 ),
@@ -95,8 +101,14 @@ class AreaEffects extends StatelessWidget {
                     children: [
                       TextSpan(
                           text: 'For a ranged area attack, only one of the red hexes needs to be within the range ' +
-                              'specified, and it does not need to contain an enemy. However, for both ranged and melee area attacks, you can only attack enemies in hexes you ' +
-                              'have line of sight to.\n'),
+                              'specified, and it does not need to contain an enemy. However, for both ranged and melee area attacks, '),
+                      TextSpan(
+                        text:
+                            'you can only attack enemies in hexes you have line of sight to.\n',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ],
                   ),
                 ),
@@ -113,8 +125,27 @@ class AreaEffects extends StatelessWidget {
                       style: Theme.of(context).textTheme.body1,
                       children: [
                         TextSpan(
-                            text:
-                                'Example: This attack indicates that the figure can perform a ranged "Attack 4" on a cluster of three hexes as long as at least one of those hexes is winthin Range 3.\n'),
+                          text: 'Example: ',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontStyle: FontStyle.italic,
+                          ),
+                        ),
+                        TextSpan(
+                          text:
+                              'This attack indicates that the figure can perform a ranged "Attack 4" on a cluster of three hexes as long as ',
+                          style: TextStyle(
+                            fontStyle: FontStyle.italic,
+                          ),
+                        ),
+                        TextSpan(
+                          text:
+                              'at least one of those hexes is winthin Range 3.\n',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontStyle: FontStyle.italic,
+                          ),
+                        ),
                       ],
                     ),
                   ),
@@ -132,8 +163,19 @@ class AreaEffects extends StatelessWidget {
                       style: Theme.of(context).textTheme.body1,
                       children: [
                         TextSpan(
-                            text:
-                                'Example: This attack indicates that the figure can perform a melee "Attack 3" on the cluster of three hexes.\n'),
+                          text: 'Example: ',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontStyle: FontStyle.italic,
+                          ),
+                        ),
+                        TextSpan(
+                          text:
+                              'This attack indicates that the figure can perform a melee "Attack 3" on the cluster of three hexes.\n',
+                          style: TextStyle(
+                            fontStyle: FontStyle.italic,
+                          ),
+                        ),
                       ],
                     ),
                   ),
@@ -167,10 +209,40 @@ class AreaEffects extends StatelessWidget {
                     style: Theme.of(context).textTheme.body1,
                     children: [
                       TextSpan(
-                          text: '\nFor any attack that targets multiple enemies, an attack modifier card is drawn for each target.' +
-                              ' It is not possible to target the same enemy with multiple attacks from the same ability. Note: Abilities can never target allies (positive abilities' +
-                              ' meant for allies will use the term "affect" instead of "target"). An ally can be within the affected area of an attack, but they will not be targeted ' +
-                              'by it.\n'),
+                          text:
+                              '\nFor any attack that targets multiple enemies, an attack modifier card is drawn for '),
+                      TextSpan(
+                        text: 'each target',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text:
+                              '. It is not possible to target the same enemy with multiple attacks from the same ability. '),
+                      TextSpan(
+                        text: 'Note:',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(text: ' Abilities can '),
+                      TextSpan(
+                        text: 'never',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text:
+                              ' target allies (positive abilities meant for allies will use the term "affect" instead of "target"). An ally can' +
+                                  ' be within the affected area of an attack, '),
+                      TextSpan(
+                        text: 'but they will not be targeted by it.\n',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ],
                   ),
                 ),

@@ -21,8 +21,17 @@ class MonsterOrderOfAction extends StatelessWidget {
                     style: Theme.of(context).textTheme.body1,
                     children: [
                       TextSpan(
-                          text: '\nAll monsters of the same type take individual turns at the same initiative value listed on their monster ability card. All elites of a type activate first,' +
-                              ' then the normal monsters of that type activate. If more than one elite or normal monster of a given type is present on the board, then the monsters ' +
+                          text:
+                              '\nAll monsters of the same type take individual turns at the same initiative value listed on their monster ability card. '),
+                      TextSpan(
+                        text:
+                            ' All elites of a type activate first, then the normal monsters of that type activate.',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text: ' If more than one elite or normal monster of a given type is present on the board, then the monsters ' +
                               'activate in ascending numerical order according to the numbers on their tokens '),
                       WidgetSpan(child: ReferenceLetterImage('a')),
                       TextSpan(text: '.'),

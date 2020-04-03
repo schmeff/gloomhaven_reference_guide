@@ -20,8 +20,18 @@ class EndOfTurnLooting extends StatelessWidget {
                     style: Theme.of(context).textTheme.body1,
                     children: [
                       TextSpan(
-                          text: '\nIn addition to specific loot abilities, a character must also loot any money tokens or treasure tiles present in the hex he or she' +
-                              ' occupies at the end of the character\'s turn. Character summons do not perform end-of-turn looting.\n'),
+                          text: '\nIn addition to specific loot abilities, '),
+                      TextSpan(
+                        text:
+                            'a character must also loot any money tokens or treasure tiles present in the hex he or she' +
+                                ' occupies at the end of the character\'s turn.',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text:
+                              ' Character summons do not perform end-of-turn looting.\n'),
                     ],
                   ),
                 ),

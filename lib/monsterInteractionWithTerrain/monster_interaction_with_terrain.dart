@@ -21,8 +21,23 @@ class MonsterInteractionWithTerrain extends StatelessWidget {
                     style: Theme.of(context).textTheme.body1,
                     children: [
                       TextSpan(
-                          text: '\nMonsters without the Flying trait consider negative hexes (traps or hazardous terrain) to be obstacles when determining focus and movement' +
-                              ' unless movement through one of these hexes is the only way they can focus on a target. In this case, they will use the path moving through' +
+                          text: '\nMonsters without the Flying trait consider negative hexes (traps or hazardous terrain) to be obstacles when determining focus and movement '),
+                      TextSpan(
+                        text: 'unless',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text: ' movement through one of these hexes is the '),
+                      TextSpan(
+                        text: 'only',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text: ' way they can focus on a target. In this case, they will use the path moving through' +
                               ' the smallest number of negative hexes possible to find a focus and suffer any consequences.\n'),
                     ],
                   ),
@@ -136,7 +151,8 @@ class MonsterInteractionWithTerrain extends StatelessWidget {
                         ),
                       ),
                       TextSpan(
-                        text: ' and attack her focus. If she only has Move 1, however, she will stay where she is and not attack. She will not move into the trap ',
+                        text:
+                            ' and attack her focus. If she only has Move 1, however, she will stay where she is and not attack. She will not move into the trap ',
                         style: TextStyle(
                           fontStyle: FontStyle.italic,
                         ),
@@ -149,7 +165,7 @@ class MonsterInteractionWithTerrain extends StatelessWidget {
                       ),
                       TextSpan(
                         text: ', even though it would put her in range to attack the Brute, because there is still another viable path to get within range of the Brute, even ' +
-                              'if she can\'t use it this turn. She also will not move to hex ',
+                            'if she can\'t use it this turn. She also will not move to hex ',
                         style: TextStyle(
                           fontStyle: FontStyle.italic,
                         ),
@@ -161,7 +177,8 @@ class MonsterInteractionWithTerrain extends StatelessWidget {
                         ),
                       ),
                       TextSpan(
-                        text: ', as it would get her no closer to being in range of the Brute.\n',
+                        text:
+                            ', as it would get her no closer to being in range of the Brute.\n',
                         style: TextStyle(
                           fontStyle: FontStyle.italic,
                         ),

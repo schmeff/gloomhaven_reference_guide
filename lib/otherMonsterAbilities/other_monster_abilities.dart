@@ -57,8 +57,18 @@ class OtherMonsterAbilities extends StatelessWidget {
                         style: TextStyle(fontWeight: FontWeight.bold),
                       ),
                       TextSpan(
-                        text: 'Ability card bonuses are activated through actions only when the monster activates and are only active until' +
-                            ' the end of the round in which the card was drawn.\n',
+                        text:
+                            'Ability card bonuses are activated through actions ',
+                      ),
+                      TextSpan(
+                        text: 'only when the monster activates',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                        text:
+                            ' and are only active until the end of the round in which the card was drawn.\n',
                       ),
                     ],
                   ),
@@ -72,7 +82,16 @@ class OtherMonsterAbilities extends StatelessWidget {
                         style: TextStyle(fontWeight: FontWeight.bold),
                       ),
                       TextSpan(
-                        text: 'Monsters do not perform end-of-turn looting, but some monsters do have loot actions. ' +
+                        text: 'Monsters do ',
+                      ),
+                      TextSpan(
+                        text: 'not',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                        text: ' perform end-of-turn looting, but some monsters do have loot actions. ' +
                             'In these cases, a monster will pick up all money tokens within the specified range. These money tokens are lost and are not dropped again when ' +
                             'the looting monster is killed. Monsters are unable to loot treasure tiles.\n',
                       ),

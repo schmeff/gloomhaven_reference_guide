@@ -32,11 +32,33 @@ class Treasure extends StatelessWidget {
                               'of a scenario, and the rules for looting them will be specified by the scenario. "Goal" tiles' +
                               ' are reset every time a scenario is played. Numbered tiles can provide a number of different ' +
                               'benefits.\n\nWhen one is looted, the looting player should immediately reference the number ' +
-                              'of the tile with the treasure index in the back of the scenario book to discover what was looted.' +
-                              ' If a specific item name is listed, find this item in the deck of unique items and immediately ' +
-                              'add it to your pool of items. If an item design is listed, find all copies of that item and add' +
-                              ' them to the city\'s available supply. Numbered treasure tiles can only be looted once. After ' +
-                              'they have been looted, they should be crossed off in the Scenario Book as a reminder.\n'),
+                              'of the tile with the treasure index in the back of the scenario book to discover what was looted. If a '),
+                      TextSpan(
+                        text: 'specific item name',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text:
+                              ' is listed, find this item in the deck of unique items and immediately ' +
+                                  'add it to your pool of items. If an '),
+                      TextSpan(
+                        text: 'item design',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text: ' is listed, find all copies of that item and add them to the city\'s available supply. '),
+                      TextSpan(
+                        text: 'Numbered treasure tiles can only be looted once.',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text: ' After they have been looted, they should be crossed off in the Scenario Book as a reminder.\n'),
                     ],
                   ),
                 ),

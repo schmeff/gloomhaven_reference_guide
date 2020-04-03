@@ -20,9 +20,33 @@ class MonsterTurn extends StatelessWidget {
                     style: Theme.of(context).textTheme.body1,
                     children: [
                       TextSpan(
-                          text: '\nMonsters\' decisions are controlled by a system of action cards that automate what the monsters will do on their turn in the initiative order.' +
-                              ' They are not controlled by a separate player. All monsters will perform the actions listed on their ability card for the round in the order written.' +
-                              ' They will not move or attack unless these actions are listed on their card.\n'),
+                          text:
+                              '\nMonsters\' decisions are controlled by a system of action cards that '),
+                      TextSpan(
+                        text: 'automate',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text:
+                              ' what the monsters will do on their turn in the initiative order. They are '),
+                      TextSpan(
+                        text: 'not',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text:
+                              ' controlled by a separate player. All monsters will perform the actions listed on their ability card for the round in the order written.'),
+                      TextSpan(
+                        text:
+                            'They will not move or attack unless these actions are listed on their card.\n',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ],
                   ),
                 ),
@@ -88,7 +112,8 @@ class MonsterTurn extends StatelessWidget {
                 const SizedBox(height: 10),
                 RaisedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, '/monsterInteractionWithTerrain');
+                    Navigator.pushNamed(
+                        context, '/monsterInteractionWithTerrain');
                   },
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -133,7 +158,7 @@ class MonsterTurn extends StatelessWidget {
                     ],
                   ),
                 ),
-                const SizedBox(height:10),
+                const SizedBox(height: 10),
                 RaisedButton(
                   onPressed: () {
                     Navigator.pushNamed(context, '/ambiguity');
@@ -149,7 +174,7 @@ class MonsterTurn extends StatelessWidget {
                     ],
                   ),
                 ),
-                const SizedBox(height:10),
+                const SizedBox(height: 10),
                 RaisedButton(
                   onPressed: () {
                     Navigator.pushNamed(context, '/bosses');
@@ -165,7 +190,7 @@ class MonsterTurn extends StatelessWidget {
                     ],
                   ),
                 ),
-                const SizedBox(height:20),
+                const SizedBox(height: 20),
               ],
             ),
           )),

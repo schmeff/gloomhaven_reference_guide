@@ -19,9 +19,14 @@ class Exhaustion extends StatelessWidget {
                   text: TextSpan(
                     style: Theme.of(context).textTheme.body1,
                     children: [
+                      TextSpan(text: '\nA character can become '),
                       TextSpan(
-                          text:
-                              '\nA character can become exhausted in one of two ways:\n'),
+                        text: 'exhausted',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(text: ' in one of two ways:\n'),
                     ],
                   ),
                 ),
@@ -83,8 +88,26 @@ class Exhaustion extends StatelessWidget {
                       TextSpan(
                           text: 'In either case, all ability cards are placed in the ' +
                               'characters lost pile, the character\'s figure is removed from the map, and the character can no longer participate in the scenario in' +
-                              ' any way. There is no coming back from being exhausted during a scenario, and thus it should be avoided at all costs. If all characters' +
-                              ' become exhausted during a scenario, the scenario is lost.\n'),
+                              ' any way. '),
+                      TextSpan(
+                        text:
+                            'There is no coming back from being exhausted during a scenario',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text:
+                              ', and thus it should be avoided at all costs. If '),
+                      TextSpan(
+                        text: 'all',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text:
+                              ' characters become exhausted during a scenario, the scenario is lost.\n'),
                     ],
                   ),
                 ),

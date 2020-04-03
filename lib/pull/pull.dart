@@ -26,8 +26,16 @@ class Pull extends StatelessWidget {
                     style: Theme.of(context).textTheme.body1,
                     children: [
                       TextSpan(
-                          text: 'The target is forced to move X hexes in a direction specified by the attacker, but each hex moved must place the' +
-                              ' target closer to the attacker than it was previously. If there are no viable hexes into which to pull the target,' +
+                          text:
+                              'The target is forced to move X hexes in a direction specified by the attacker, but each hex moved must place the target '),
+                      TextSpan(
+                        text: 'closer to',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text: ' the attacker than it was previously. If there are no viable hexes into which to pull the target,' +
                               ' the pull ends. The target can be pulled through its allies, but not its enemies. Both push and pull effects are ' +
                               'considered movements, however, they are not affected by difficult terrain.\n'),
                     ],

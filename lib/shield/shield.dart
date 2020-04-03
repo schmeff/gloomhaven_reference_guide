@@ -27,8 +27,16 @@ class Shield extends StatelessWidget {
                     style: Theme.of(context).textTheme.body1,
                     children: [
                       TextSpan(
-                          text: 'A "Shield X" bonus ability gives the recipient a defender\'s bonus that reduces any incoming attack value by X. Multiple shield bonuses stack with one ' +
-                              'another and can be applied in any order. A shield bonus only applies to damage caused by an attack.\n'),
+                          text:
+                              'A "Shield X" bonus ability gives the recipient a defender\'s bonus that reduces any incoming attack value by X. Multiple shield bonuses stack with one ' +
+                                  'another and can be applied in any order. '),
+                      TextSpan(
+                        text:
+                            'A shield bonus only applies to damage caused by an attack.\n',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ],
                   ),
                 ),

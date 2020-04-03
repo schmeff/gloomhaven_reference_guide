@@ -22,8 +22,16 @@ class DeterminingInitiative extends StatelessWidget {
                       TextSpan(
                           text: '\nAfter players have either selected their two action cards or declared a long rest, the players reveal a monster ability' +
                               ' card for each type of monster that has at least one figure currently on the map. In addition, each player not taking a' +
-                              ' long rest reveals his or her selected cards for the round, placing their leading card on top so that its initiative value is' +
-                              ' visible.\n'),
+                              ' long rest reveals his or her selected cards for the round, placing their '),
+                      TextSpan(
+                        text: 'leading card',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text:
+                              ' on top so that its initiative value is visible.\n'),
                     ],
                   ),
                 ),

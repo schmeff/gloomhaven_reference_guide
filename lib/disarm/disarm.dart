@@ -28,7 +28,16 @@ class Disarm extends StatelessWidget {
                     children: [
                       TextSpan(
                           text:
-                              'If a figure is disarmed, it cannot perform any attack abilities on its turn. At the end of its next turn, the disarm token is removed.\n'),
+                              'If a figure is disarmed, it cannot perform any '),
+                      TextSpan(
+                        text: 'attack',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text:
+                              ' abilities on its turn. At the end of its next turn, the disarm token is removed.\n'),
                     ],
                   ),
                 ),

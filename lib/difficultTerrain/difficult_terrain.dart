@@ -27,8 +27,25 @@ class DifficultTerrain extends StatelessWidget {
                     style: Theme.of(context).textTheme.body1,
                     children: [
                       TextSpan(
-                          text: 'It takes a figure two normal movement points to enter a hex with difficult terrain. ' +
-                              'Flying, Jump, and forced movements are unaffected by difficult terrain.\n'),
+                          text:
+                              'It takes a figure two normal movement points to enter a hex with difficult terrain. ' +
+                                  'Flying'),
+                      WidgetSpan(
+                        child: Image(
+                          image: AssetImage('images/fly_icon.png'),
+                          width: 22,
+                        ),
+                      ),
+                      TextSpan(text: ', Jump'),
+                      WidgetSpan(
+                        child: Image(
+                          image: AssetImage('images/jump_icon.png'),
+                          width: 22,
+                        ),
+                      ),
+                      TextSpan(
+                          text:
+                              ' and forced movements are unaffected by difficult terrain.\n'),
                     ],
                   ),
                 ),

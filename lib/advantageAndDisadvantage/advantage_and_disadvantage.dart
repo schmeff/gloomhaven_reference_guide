@@ -16,16 +16,49 @@ class AdvantageAndDisadvantage extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: <Widget>[
-                Text(
-                    '\nSome attacks may have either Advantage or Disadvantage.\n'),
                 RichText(
                   text: TextSpan(
                     style: Theme.of(context).textTheme.body1,
                     children: [
+                      TextSpan(text: '\nSome attacks may have either '),
+                      TextSpan(
+                        text: 'Advantage',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(text: ' or '),
+                      TextSpan(
+                        text: 'Disadvantage',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(text: '.\n'),
+                    ],
+                  ),
+                ),
+                RichText(
+                  text: TextSpan(
+                    style: Theme.of(context).textTheme.body1,
+                    children: [
+                      TextSpan(text: 'An attacker with '),
+                      TextSpan(
+                        text: 'Advantage',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                       TextSpan(
                           text:
-                              'An attacker with Advantage will draw two modifier cards from their deck and use whichever ' +
-                                  'one is better '),
+                              ' will draw two modifier cards from their deck and use whichever one is '),
+                      TextSpan(
+                        text: 'better',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(text: ' '),
                       WidgetSpan(
                         child: ReferenceLetterImage("a"),
                       ),
@@ -86,9 +119,23 @@ class AdvantageAndDisadvantage extends StatelessWidget {
                   text: TextSpan(
                     style: Theme.of(context).textTheme.body1,
                     children: [
+                      TextSpan(text: 'An attacker with '),
                       TextSpan(
-                          text: 'An attacker with Disadvantage will draw' +
-                              ' two modifier cards from their deck and use whichever one is worse '),
+                        text: 'Disadvantage',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text:
+                              ' will draw two modifier cards from their deck and use whichever one is '),
+                      TextSpan(
+                        text: 'worse',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(text: ' '),
                       WidgetSpan(
                         child: ReferenceLetterImage("d"),
                       ),

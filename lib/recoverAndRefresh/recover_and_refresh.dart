@@ -19,11 +19,30 @@ class RecoverAndRefresh extends StatelessWidget {
                   text: TextSpan(
                     style: Theme.of(context).textTheme.body1,
                     children: [
+                      TextSpan(text: '\nCertain abilities allow a player to '),
                       TextSpan(
-                          text: '\nCertain abilities allow a player to recover discarded or lost ability cards. This means that the player can look through his or' +
-                              ' her discard or lost pile (or discarded or lost cards in his or her active area), select up to a number of cards specified in the' +
-                              ' ability, and immediately return them to his or her hand. Some cards, however, cannot be recovered or refreshed once lost. This is' +
-                              ' denoted by the '),
+                        text: 'recover',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(text: ' discarded or lost '),
+                      TextSpan(
+                        text: 'ability',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text: ' cards. This means that the player can look through his or her discard or lost pile (or discarded or lost cards in his' +
+                              ' or her active area), select up to a number of cards specified in the ability, and immediately return them to his or her hand. Some cards, however, '),
+                      TextSpan(
+                        text: 'cannot be recovered or refreshed once lost',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(text: '. This is' + ' denoted by the '),
                       WidgetSpan(
                         child: Image(
                           image: AssetImage('images/gone_forever_icon.png'),
@@ -41,8 +60,21 @@ class RecoverAndRefresh extends StatelessWidget {
                     style: Theme.of(context).textTheme.body1,
                     children: [
                       TextSpan(
+                        text: 'Refresh',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
                           text:
-                              'Refresh abilities allow players to regain the use of spent or consumed item cards.\n'),
+                              ' abilities allow players to regain the use of spent or consumed '),
+                      TextSpan(
+                        text: 'item',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(text: ' cards.\n'),
                     ],
                   ),
                 ),

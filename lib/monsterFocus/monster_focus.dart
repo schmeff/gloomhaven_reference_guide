@@ -74,7 +74,15 @@ class MonsterFocus extends StatelessWidget {
                           children: [
                             TextSpan(
                                 text: 'If more than one enemy ties for' +
-                                    ' being the closest, the second priority is to focus on the enemy who is earlier in the initiative order (summons are focused on before the character' +
+                                    ' being the closest, the second priority is to focus on the enemy who is '),
+                            TextSpan(
+                              text: 'earlier in the initiative order',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            TextSpan(
+                                text: ' (summons are focused on before the character' +
                                     ' who summoned them in this regard, even on the round they are summoned, and a character who is performing a long rest would be focused on last).\n'),
                           ],
                         ),

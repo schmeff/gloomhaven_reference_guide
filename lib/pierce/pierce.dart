@@ -27,9 +27,29 @@ class Pierce extends StatelessWidget {
                     children: [
                       TextSpan(
                           text: 'Up to X points of the target\'s Shield are ignored for the attack. Unlike other effects, pierce is applied while ' +
-                              'calculating the accompanying attack damage instead of afterwards.\n\nExample: an Attack 3 pierce 2 ability used on a' +
-                              ' monster with Shield 3 would ignore two of the monster\'s Shield points and inflict 2 damage (modified by an attack ' +
-                              'modifier card).\n'),
+                              'calculating the accompanying attack damage instead of afterwards.\n'),
+                    ],
+                  ),
+                ),
+                RichText(
+                  text: TextSpan(
+                    style: Theme.of(context).textTheme.body1,
+                    children: [
+                      TextSpan(
+                        text: 'Example:',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontStyle: FontStyle.italic,
+                        ),
+                      ),
+                      TextSpan(
+                        text: ' an Attack 3 pierce 2 ability used on a' +
+                            ' monster with Shield 3 would ignore two of the monster\'s Shield points and inflict 2 damage (modified by an attack ' +
+                            'modifier card).\n',
+                        style: TextStyle(
+                          fontStyle: FontStyle.italic,
+                        ),
+                      ),
                     ],
                   ),
                 ),

@@ -28,7 +28,22 @@ class HazardousTerrain extends StatelessWidget {
                     children: [
                       TextSpan(
                           text: 'If a figure enters a hex with hazardous terrain via normal or forced movement,' +
-                              ' each hex will inflict half the damage of a trap (rounded down). Flying and Jump' +
+                              ' each hex will inflict half the damage of a trap (rounded down). Flying '),
+                      WidgetSpan(
+                        child: Image(
+                          image: AssetImage('images/fly_icon.png'),
+                          width: 22,
+                        ),
+                      ),
+                      TextSpan(text: 'and Jump '),
+                      WidgetSpan(
+                        child: Image(
+                          image: AssetImage('images/jump_icon.png'),
+                          width: 22,
+                        ),
+                      ),
+                      TextSpan(
+                          text:
                               ' movements are unaffected by hazardous terrain.\n'),
                     ],
                   ),

@@ -95,9 +95,25 @@ class Summon extends StatelessWidget {
                     style: Theme.of(context).textTheme.body1,
                     children: [
                       TextSpan(
-                          text: 'A summon\'s turn in the initiative order is always directly before the ' +
-                              'character who summoned it, and is separate from that character\'s turn. Summons are not controlled by the summoning player, but ' +
-                              'instead obey automated monster rules, permanently following the ability card "Move+0, Attack+0" (see Monster Turn on pp. 29-32 ' +
+                          text:
+                              'A summon\'s turn in the initiative order is always '),
+                      TextSpan(
+                        text: 'directly before the character who summoned it',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text: ', and is separate from that character\'s turn. Summons are not controlled by the summoning player, but ' +
+                              'instead obey automated monster rules, permanently following the ability card '),
+                      TextSpan(
+                        text: '"Move+0, Attack+0"',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text: ' (see Monster Turn on pp. 29-32 ' +
                               'for details) and using the player\'s attack modifier deck to perform its attacks.\n'),
                     ],
                   ),
@@ -126,8 +142,16 @@ class Summon extends StatelessWidget {
                     children: [
                       TextSpan(
                           text: 'A player can have multiple different summon' +
-                              ' abilities in play at once, in which case they act in the order in which they were summoned. Summoned figures never take a turn ' +
-                              'in the round they are summoned. Summon kills are credited to the owner of the summon.\n'),
+                              ' abilities in play at once, in which case they act in the order in which they were summoned. Summoned figures '),
+                      TextSpan(
+                        text: 'never',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text:
+                              ' take a turn in the round they are summoned. Summon kills are credited to the owner of the summon.\n'),
                     ],
                   ),
                 ),

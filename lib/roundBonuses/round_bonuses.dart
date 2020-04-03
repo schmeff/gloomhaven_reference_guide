@@ -46,8 +46,23 @@ class RoundBonuses extends StatelessWidget {
                     children: [
                       TextSpan(
                           text:
-                              'Even though a bonus card is placed in the active area, it is still considered discarded or lost, depending on whether the action ' +
-                                  'also contains a '),
+                              'Even though a bonus card is placed in the active area, it is still considered '),
+                      TextSpan(
+                        text: 'discarded',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(text: ' or '),
+                      TextSpan(
+                        text: 'lost',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text:
+                              ', depending on whether the action also contains a '),
                       WidgetSpan(
                         child: Image(
                           image: AssetImage('images/lost.png'),

@@ -27,9 +27,27 @@ class Heal extends StatelessWidget {
                     style: Theme.of(context).textTheme.body1,
                     children: [
                       TextSpan(
-                          text: 'A "Heal X" ability allows a figure to return X hit points to either themselves or one ally within the ability\'s range. Heals are always accompanied ' +
-                              'by one of two labels:\n\n"Range Y" means that any ally within Y hexes, or the figure performing the heal, can be affected by the heal. Like all ' +
-                              'ranged abilities, the recipient must be in line-of-sight.\n\n"Self" mean the figure can only affect him or herself with the heal.\n'),
+                          text:
+                              'A "Heal X" ability allows a figure to return X hit points to either themselves or one ally within the ability\'s range. Heals are always accompanied ' +
+                                  'by one of two labels:\n\n'),
+                      TextSpan(
+                        text: '"Range Y"',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text: ' means that any ally within Y hexes, or the figure performing the heal, can be affected by the heal. Like all ' +
+                              'ranged abilities, the recipient must be in line-of-sight.\n\n'),
+                      TextSpan(
+                        text: '"Self"',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text:
+                              ' means the figure can only affect him or herself with the heal.\n'),
                     ],
                   ),
                 ),

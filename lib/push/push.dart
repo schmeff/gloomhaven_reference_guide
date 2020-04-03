@@ -26,8 +26,17 @@ class Push extends StatelessWidget {
                     style: Theme.of(context).textTheme.body1,
                     children: [
                       TextSpan(
-                          text: 'The target is forced to move X hexes in a direction specified by the attacker, but each hex moved must ' +
-                              'place the target farther away from the attacker than it was previously. If there are no viable hexes ' +
+                          text:
+                              'The target is forced to move X hexes in a direction specified by the attacker, but each hex moved must ' +
+                                  'place the target '),
+                      TextSpan(
+                        text: 'farther away from',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text: ' the attacker than it was previously. If there are no viable hexes ' +
                               'into which to push the target, the push ends. The target can be pushed through its allies, but not its enemies.\n'),
                     ],
                   ),

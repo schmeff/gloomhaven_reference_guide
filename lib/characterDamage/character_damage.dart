@@ -20,9 +20,16 @@ class CharacterDamage extends StatelessWidget {
                   text: TextSpan(
                     style: Theme.of(context).textTheme.body1,
                     children: [
+                      TextSpan(text: '\nWhenever any '),
+                      TextSpan(
+                        text: 'damage',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                       TextSpan(
                           text:
-                              '\nWhenever any damage is dealt to a character, the player has two options:\n'),
+                              ' is dealt to a character, the player has two options:\n'),
                     ],
                   ),
                 ),
@@ -43,8 +50,20 @@ class CharacterDamage extends StatelessWidget {
                           style: Theme.of(context).textTheme.body1,
                           children: [
                             TextSpan(
-                                text:
-                                    'Suffer the damage and move his or her hit point total on the tracking wheel down the appropriate number, or...\n'),
+                              text: 'Suffer the damage',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            TextSpan(text: ' and '),
+                            TextSpan(
+                              text:
+                                  'move his or her hit point total on the tracking wheel down the appropriate number',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            TextSpan(text: ', or...\n'),
                           ],
                         ),
                       ),
@@ -68,10 +87,44 @@ class CharacterDamage extends StatelessWidget {
                           style: Theme.of(context).textTheme.body1,
                           children: [
                             TextSpan(
-                                text: 'Choose one card to lose from his or her hand or two cards to lose from' +
-                                    ' his or her discard pile to negate the damage (any additional effects of the attack are still applied). Note that before a character acts' +
-                                    ' in a round, the two cards chosen at the beginning of the round are neither in the player\'s hand or lost or discard pile, and so cannot ' +
-                                    'be lost to negate damage.\n'),
+                              text: 'Choose one card to lose',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            TextSpan(text: ' from his or her '),
+                            TextSpan(
+                              text: 'hand',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            TextSpan(text: ' or '),
+                            TextSpan(
+                              text: 'two cards to lose',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            TextSpan(text: ' from his or her '),
+                            TextSpan(
+                              text: 'discard pile',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            TextSpan(
+                                text:
+                                    ' to negate the damage (any additional effects of the attack are still applied). '),
+                            TextSpan(
+                              text: 'Note',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            TextSpan(
+                                text: ' that before a character acts in a round, the two cards chosen at the beginning of the round are' +
+                                    ' neither in the player\'s hand or lost or discard pile, and so cannot be lost to negate damage.\n'),
                           ],
                         ),
                       ),
@@ -84,7 +137,13 @@ class CharacterDamage extends StatelessWidget {
                     children: [
                       TextSpan(
                           text:
-                              'Whenever a character is healed, move his or her hit point total on the tracking wheel up the appropriate number '),
+                              'Whenever a character is healed, move his or her  '),
+                      TextSpan(
+                        text: 'hit point total on the tracking wheel up the appropriate number ',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                       WidgetSpan(
                         child: ReferenceLetterImage('d'),
                       ),

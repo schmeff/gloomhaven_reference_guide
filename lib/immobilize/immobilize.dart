@@ -28,7 +28,16 @@ class Immobilize extends StatelessWidget {
                     children: [
                       TextSpan(
                           text:
-                              'If a figure is immobilized, it cannot perform any move abilities on its turn. At the end of its next turn, the immobilize token is removed.\n'),
+                              'If a figure is immobilized, it cannot perform any '),
+                      TextSpan(
+                        text: 'move',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                          text:
+                              ' abilities on its turn. At the end of its next turn, the immobilize token is removed.\n'),
                     ],
                   ),
                 ),
