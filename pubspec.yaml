@@ -32,8 +32,8 @@ dev_dependencies:
 flutter_icons:
   android: true
   ios: true
-  image_path_ios: 'images/gloomhaven_rg_icon.png'
-  image_path_android: 'images/gloomhaven_rg_icon.png'
+  image_path_ios: 'images/launcher/grg_launcher_icon_ios.png'
+  image_path_android: 'images/launcher/gloomhaven_rg_icon.png'
 
 
 # For information on the generic Dart part of this file, see the
