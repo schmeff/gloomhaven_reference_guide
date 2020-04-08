@@ -77,6 +77,7 @@ class _GloomhavenAppState extends State<GloomhavenApp> {
 
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: _getTheme(),
       routes: Routes().getRoutes,
       home: Scaffold(
