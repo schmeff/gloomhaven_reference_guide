@@ -11,7 +11,7 @@ description: A new Flutter project.
 # In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
 # Read more about iOS versioning at
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-version: 1.0.6+6
+version: 1.0.7+7
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
@@ -30,10 +30,9 @@ dev_dependencies:
   flutter_launcher_icons: "^0.7.4"
 
 flutter_icons:
-  android: true
+  android: false
   ios: true
   image_path_ios: 'images/launcher/grg_launcher_icon_ios.png'
-  image_path_android: 'images/launcher/gloomhaven_rg_icon.png'
 
 
 # For information on the generic Dart part of this file, see the
