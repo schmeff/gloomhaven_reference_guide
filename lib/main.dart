@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:gloomhaven_reference_guide/rule_description_arguments.dart';
+import 'package:gloomhaven_reference_guide/classes/rule_description_arguments.dart';
 
-import './rule_description.dart';
-import './rules.dart';
-import './rule_search.dart';
+import 'widgets/rule_description.dart';
+import 'data/rules.dart';
+import 'widgets/rule_search.dart';
 import './routes.dart';
 
 void main() => runApp(GloomhavenApp());
