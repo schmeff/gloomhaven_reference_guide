@@ -18,7 +18,7 @@ class GainingExperience extends StatelessWidget {
               children: <Widget>[
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text:
@@ -38,7 +38,7 @@ class GainingExperience extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: 'In addition, sometimes the action specifies that experience is only earned under certain conditions, ' +
@@ -88,7 +88,7 @@ class GainingExperience extends StatelessWidget {
                     Expanded(
                       child: RichText(
                         text: TextSpan(
-                          style: Theme.of(context).textTheme.body1,
+                          style: Theme.of(context).textTheme.bodyText2,
                           children: [
                             TextSpan(
                                 text:

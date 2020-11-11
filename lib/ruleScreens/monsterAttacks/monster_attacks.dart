@@ -17,7 +17,7 @@ class MonsterAttacks extends StatelessWidget {
               children: <Widget>[
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(text: '\nA monster will attack on its turn if '),
                       TextSpan(
@@ -44,7 +44,7 @@ class MonsterAttacks extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: 'Monster attacks function exactly like character attacks, and are modified by the attacker\'s attack bonuses, then attack modifier' +

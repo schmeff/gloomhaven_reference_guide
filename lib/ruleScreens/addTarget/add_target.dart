@@ -23,7 +23,7 @@ class AddTarget extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: '\nIf a figure triggers this effect with an attack action, the figure may add an additional target within range to their ' +

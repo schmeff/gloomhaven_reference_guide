@@ -17,7 +17,7 @@ class AttackEffects extends StatelessWidget {
               children: <Widget>[
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: '\nAttack abilities will often have effects that increase their power. If an attack effect is listed on an ability card after an attack, the target ' +

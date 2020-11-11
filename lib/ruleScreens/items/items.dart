@@ -17,7 +17,7 @@ class Items extends StatelessWidget {
               children: <Widget>[
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: '\nCharacters can use items at any time, within the constraints of what is written on the item card, including in the middle of a card ability. ' +

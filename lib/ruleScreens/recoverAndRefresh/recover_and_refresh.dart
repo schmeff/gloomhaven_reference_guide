@@ -17,7 +17,7 @@ class RecoverAndRefresh extends StatelessWidget {
               children: <Widget>[
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(text: '\nCertain abilities allow a player to '),
                       TextSpan(
@@ -57,7 +57,7 @@ class RecoverAndRefresh extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                         text: 'Refresh',
@@ -80,7 +80,7 @@ class RecoverAndRefresh extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: 'In the case of both recover and refresh, ' +
@@ -105,7 +105,7 @@ class RecoverAndRefresh extends StatelessWidget {
                             ),
                             RichText(
                               text: TextSpan(
-                                style: Theme.of(context).textTheme.body1,
+                                style: Theme.of(context).textTheme.bodyText2,
                                 children: [
                                   TextSpan(
                                     text: 'Recover Ability Card\n',
@@ -130,7 +130,7 @@ class RecoverAndRefresh extends StatelessWidget {
                             ),
                             RichText(
                               text: TextSpan(
-                                style: Theme.of(context).textTheme.body1,
+                                style: Theme.of(context).textTheme.bodyText2,
                                 children: [
                                   TextSpan(
                                     text: 'Refresh Item\n',
@@ -156,7 +156,7 @@ class RecoverAndRefresh extends StatelessWidget {
                             ),
                             RichText(
                               text: TextSpan(
-                                style: Theme.of(context).textTheme.body1,
+                                style: Theme.of(context).textTheme.bodyText2,
                                 children: [
                                   TextSpan(
                                     text:

@@ -17,7 +17,7 @@ class Ambiguity extends StatelessWidget {
               children: <Widget>[
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: '\nIf the rules ever make any monster action ambiguous because there are multiple viable hexes to which the monster could move, multiple equally ' +

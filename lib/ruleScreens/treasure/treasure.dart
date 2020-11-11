@@ -24,7 +24,7 @@ class Treasure extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: 'Treasure tiles can be looted by a player for a variety of effects. There are two types of ' +

@@ -18,7 +18,7 @@ class FinishingAScenario extends StatelessWidget {
               children: <Widget>[
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                         text:
@@ -41,7 +41,7 @@ class FinishingAScenario extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       // WidgetSpan(
                       //   child: ReferenceLetterImage('a'),
@@ -87,7 +87,7 @@ class FinishingAScenario extends StatelessWidget {
                           ),
                           RichText(
                             text: TextSpan(
-                              style: Theme.of(context).textTheme.body1,
+                              style: Theme.of(context).textTheme.bodyText2,
                               children: [
                                 TextSpan(
                                   text: 'Battle Goal Card',
@@ -112,7 +112,7 @@ class FinishingAScenario extends StatelessWidget {
                           ),
                           RichText(
                             text: TextSpan(
-                              style: Theme.of(context).textTheme.body1,
+                              style: Theme.of(context).textTheme.bodyText2,
                               children: [
                                 TextSpan(
                                   text: 'Character Sheet',
@@ -130,7 +130,7 @@ class FinishingAScenario extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       // WidgetSpan(
                       //   child: ReferenceLetterImage('a'),
@@ -160,7 +160,7 @@ class FinishingAScenario extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                         text: 'If' +

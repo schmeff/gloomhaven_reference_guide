@@ -17,7 +17,7 @@ class RoundOverview extends StatelessWidget {
               children: <Widget>[
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(text: '\nA scenario consists of a series of '),
                       TextSpan(
@@ -42,7 +42,7 @@ class RoundOverview extends StatelessWidget {
                     Flexible(
                       child: RichText(
                         text: TextSpan(
-                          style: Theme.of(context).textTheme.body1,
+                          style: Theme.of(context).textTheme.bodyText2,
                           children: [
                             TextSpan(
                               text: 'Card selection:',
@@ -76,7 +76,7 @@ class RoundOverview extends StatelessWidget {
                     Flexible(
                       child: RichText(
                         text: TextSpan(
-                          style: Theme.of(context).textTheme.body1,
+                          style: Theme.of(context).textTheme.bodyText2,
                           children: [
                             TextSpan(
                               text: 'Determining initiative:',
@@ -104,7 +104,7 @@ class RoundOverview extends StatelessWidget {
                     Flexible(
                       child: RichText(
                         text: TextSpan(
-                          style: Theme.of(context).textTheme.body1,
+                          style: Theme.of(context).textTheme.bodyText2,
                           children: [
                             TextSpan(
                               text: 'Character and monster turns:',
@@ -132,7 +132,7 @@ class RoundOverview extends StatelessWidget {
                     Flexible(
                       child: RichText(
                         text: TextSpan(
-                          style: Theme.of(context).textTheme.body1,
+                          style: Theme.of(context).textTheme.bodyText2,
                           children: [
                             TextSpan(
                               text: 'End of Round:',

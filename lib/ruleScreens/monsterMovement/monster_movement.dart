@@ -18,7 +18,7 @@ class MonsterMovement extends StatelessWidget {
               children: <Widget>[
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(text: '\nA monster can move on its turn if '),
                       TextSpan(
@@ -37,7 +37,7 @@ class MonsterMovement extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: 'If a monster has an attack ability after its movement,' +
@@ -72,7 +72,7 @@ class MonsterMovement extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(text: 'If the monster is performing a '),
                       TextSpan(
@@ -91,7 +91,7 @@ class MonsterMovement extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: 'Having abilities other than "Attack" on its ability card does not affect a monster\'s movement ' +
@@ -108,7 +108,7 @@ class MonsterMovement extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                         text: 'Example:',

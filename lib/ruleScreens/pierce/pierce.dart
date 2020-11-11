@@ -23,7 +23,7 @@ class Pierce extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: 'Up to X points of the target\'s Shield are ignored for the attack. Unlike other effects, pierce is applied while ' +
@@ -33,7 +33,7 @@ class Pierce extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                         text: 'Example:',

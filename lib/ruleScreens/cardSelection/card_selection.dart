@@ -18,7 +18,7 @@ class CardSelection extends StatelessWidget {
               children: <Widget>[
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: '\nAt the beginning of a round, each player will secretly select two cards from his or her hand to play facedown in front ' +
@@ -37,7 +37,7 @@ class CardSelection extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text:
@@ -61,7 +61,7 @@ class CardSelection extends StatelessWidget {
                     Flexible(
                       child: RichText(
                         text: TextSpan(
-                          style: Theme.of(context).textTheme.body1,
+                          style: Theme.of(context).textTheme.bodyText2,
                           children: [
                             TextSpan(
                               text: 'Examples of appropriate communication:',
@@ -86,7 +86,7 @@ class CardSelection extends StatelessWidget {
                     Flexible(
                       child: RichText(
                         text: TextSpan(
-                          style: Theme.of(context).textTheme.body1,
+                          style: Theme.of(context).textTheme.bodyText2,
                           children: [
                             TextSpan(
                               text: 'Examples of inappropriate communication:',
@@ -105,7 +105,7 @@ class CardSelection extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text:
@@ -271,7 +271,7 @@ class CardSelection extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(text: '\nPlayers '),
                       TextSpan(

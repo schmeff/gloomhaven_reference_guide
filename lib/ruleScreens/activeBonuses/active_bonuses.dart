@@ -16,7 +16,7 @@ class ActiveBonuses extends StatelessWidget {
               children: <Widget>[
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: '\nSome abilities can give a character, or his or her abilities, bonuses on other abilities, either persistently until certain conditions ' +

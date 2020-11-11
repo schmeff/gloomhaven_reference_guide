@@ -24,7 +24,7 @@ class Retaliate extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: 'A "Retaliate X" bonus ability causes the recipient to inflict X points of damage on figures who attack it from an adjacent hex for each attack made. ' +

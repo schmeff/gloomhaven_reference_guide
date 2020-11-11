@@ -18,7 +18,7 @@ class AdvantageAndDisadvantage extends StatelessWidget {
               children: <Widget>[
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(text: '\nSome attacks may have either '),
                       TextSpan(
@@ -40,7 +40,7 @@ class AdvantageAndDisadvantage extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(text: 'An attacker with '),
                       TextSpan(
@@ -117,7 +117,7 @@ class AdvantageAndDisadvantage extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(text: 'An attacker with '),
                       TextSpan(

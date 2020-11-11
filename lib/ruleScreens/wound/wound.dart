@@ -24,7 +24,7 @@ class Wound extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: 'If a figure is wounded, it suffers one point of damage at the start of each of its turns. If a Heal ability is used on a wounded' +

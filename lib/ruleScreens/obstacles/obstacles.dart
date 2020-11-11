@@ -24,7 +24,7 @@ class Obstacles extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: 'Obstacles have varying artwork, but they all have the same function: figures cannot ' +

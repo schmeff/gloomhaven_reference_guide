@@ -19,7 +19,7 @@ class ScenarioLevel extends StatelessWidget {
               children: <Widget>[
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                         text: '\nMonster base statistics, trap damage',
@@ -60,7 +60,7 @@ class ScenarioLevel extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text:
@@ -84,7 +84,7 @@ class ScenarioLevel extends StatelessWidget {
                 ScenarioLevelTable(),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                         text: '\nExample:',

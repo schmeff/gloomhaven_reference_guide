@@ -17,7 +17,7 @@ class EndOfRound extends StatelessWidget {
               children: <Widget>[
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text:
@@ -39,7 +39,7 @@ class EndOfRound extends StatelessWidget {
                     Expanded(
                       child: RichText(
                         text: TextSpan(
-                          style: Theme.of(context).textTheme.body1,
+                          style: Theme.of(context).textTheme.bodyText2,
                           children: [
                             TextSpan(
                               text: 'If a standard ',
@@ -93,7 +93,7 @@ class EndOfRound extends StatelessWidget {
                     Expanded(
                       child: RichText(
                         text: TextSpan(
-                          style: Theme.of(context).textTheme.body1,
+                          style: Theme.of(context).textTheme.bodyText2,
                           children: [
                             TextSpan(
                               text:
@@ -129,7 +129,7 @@ class EndOfRound extends StatelessWidget {
                     Expanded(
                       child: RichText(
                         text: TextSpan(
-                          style: Theme.of(context).textTheme.body1,
+                          style: Theme.of(context).textTheme.bodyText2,
                           children: [
                             TextSpan(
                               text:
@@ -170,7 +170,7 @@ class EndOfRound extends StatelessWidget {
                     Expanded(
                       child: RichText(
                         text: TextSpan(
-                          style: Theme.of(context).textTheme.body1,
+                          style: Theme.of(context).textTheme.bodyText2,
                           children: [
                             TextSpan(
                               text:
@@ -205,7 +205,7 @@ class EndOfRound extends StatelessWidget {
                     Expanded(
                       child: RichText(
                         text: TextSpan(
-                          style: Theme.of(context).textTheme.body1,
+                          style: Theme.of(context).textTheme.bodyText2,
                           children: [
                             TextSpan(
                               text: 'Players may also perform a ',

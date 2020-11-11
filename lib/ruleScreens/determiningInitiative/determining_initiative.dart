@@ -17,7 +17,7 @@ class DeterminingInitiative extends StatelessWidget {
               children: <Widget>[
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: '\nAfter players have either selected their two action cards or declared a long rest, the players reveal a monster ability' +
@@ -47,7 +47,7 @@ class DeterminingInitiative extends StatelessWidget {
                       ),
                       RichText(
                         text: TextSpan(
-                          style: Theme.of(context).textTheme.body1,
+                          style: Theme.of(context).textTheme.bodyText2,
                           children: [
                             TextSpan(text: 'Initiative Icon'),
                           ],
@@ -59,7 +59,7 @@ class DeterminingInitiative extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: 'Initiative order is determined by comparing the initiative values on all played monster ability cards and all ' +
@@ -71,7 +71,7 @@ class DeterminingInitiative extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: 'If there is ever a tie in initiative between players, consult the non-leading card of each player to break the tie. (If ' +

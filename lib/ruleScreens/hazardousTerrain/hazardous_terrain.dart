@@ -24,7 +24,7 @@ class HazardousTerrain extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: 'If a figure enters a hex with hazardous terrain via normal or forced movement,' +
@@ -50,7 +50,7 @@ class HazardousTerrain extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: 'Unlike traps, hazardous ' +

@@ -18,7 +18,7 @@ class AreaEffects extends StatelessWidget {
               children: <Widget>[
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: '\nSome attacks and other abilities allow figures to target multiple hexes or multiple targets at the same time. In these cases, the area of' +
@@ -63,7 +63,7 @@ class AreaEffects extends StatelessWidget {
                     Flexible(
                       child: RichText(
                         text: TextSpan(
-                          style: Theme.of(context).textTheme.body1,
+                          style: Theme.of(context).textTheme.bodyText2,
                           children: [
                             TextSpan(
                                 text:
@@ -84,7 +84,7 @@ class AreaEffects extends StatelessWidget {
                     Flexible(
                       child: RichText(
                         text: TextSpan(
-                          style: Theme.of(context).textTheme.body1,
+                          style: Theme.of(context).textTheme.bodyText2,
                           children: [
                             TextSpan(
                                 text:
@@ -97,7 +97,7 @@ class AreaEffects extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: 'For a ranged area attack, only one of the red hexes needs to be within the range ' +
@@ -122,7 +122,7 @@ class AreaEffects extends StatelessWidget {
                   margin: EdgeInsets.symmetric(horizontal: 10),
                   child: RichText(
                     text: TextSpan(
-                      style: Theme.of(context).textTheme.body1,
+                      style: Theme.of(context).textTheme.bodyText2,
                       children: [
                         TextSpan(
                           text: 'Example: ',
@@ -160,7 +160,7 @@ class AreaEffects extends StatelessWidget {
                   margin: EdgeInsets.symmetric(horizontal: 10),
                   child: RichText(
                     text: TextSpan(
-                      style: Theme.of(context).textTheme.body1,
+                      style: Theme.of(context).textTheme.bodyText2,
                       children: [
                         TextSpan(
                           text: 'Example: ',
@@ -193,7 +193,7 @@ class AreaEffects extends StatelessWidget {
                     Flexible(
                       child: RichText(
                         text: TextSpan(
-                          style: Theme.of(context).textTheme.body1,
+                          style: Theme.of(context).textTheme.bodyText2,
                           children: [
                             TextSpan(
                                 text: 'Some attacks are accompanied by a "Target X" value, which means the character can target X number of different enemies' +
@@ -206,7 +206,7 @@ class AreaEffects extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text:
@@ -248,7 +248,7 @@ class AreaEffects extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: 'Note also that as long as an attack does not specify range, it is considered melee, such that it is possible to attack a non-adjacent target' +

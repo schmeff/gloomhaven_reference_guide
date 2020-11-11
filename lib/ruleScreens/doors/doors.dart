@@ -24,7 +24,7 @@ class Doors extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: 'A door acts as a separation between two rooms. When a character moves onto a closed door ' +
@@ -36,7 +36,7 @@ class Doors extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: 'While closed doors do not hinder character movement at all, ' +

@@ -24,7 +24,7 @@ class Loot extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: 'A "Loot X" ability allows a character to pick up every money token and treasure tile within range X. This action is unaffected by the' +

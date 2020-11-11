@@ -25,7 +25,7 @@ class Curse extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: 'If a figure is cursed, it must shuffle a curse card into its remaining attack modifier deck. When this card is revealed through' +

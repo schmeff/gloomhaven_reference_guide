@@ -18,7 +18,7 @@ class RoundTracker extends StatelessWidget {
               children: <Widget>[
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                         text: '\nSome scenarios may require players to keep track of what round it is. A round track can be found at the top of the elemental' +

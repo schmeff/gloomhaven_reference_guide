@@ -18,7 +18,7 @@ class MonsterFocus extends StatelessWidget {
               children: <Widget>[
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text:
@@ -40,7 +40,7 @@ class MonsterFocus extends StatelessWidget {
                     Expanded(
                       child: RichText(
                         text: TextSpan(
-                          style: Theme.of(context).textTheme.body1,
+                          style: Theme.of(context).textTheme.bodyText2,
                           children: [
                             TextSpan(
                                 text: 'A monster will focus on the enemy figure it can perform its current attack against using the least amount of movement. It finds the ' +
@@ -70,7 +70,7 @@ class MonsterFocus extends StatelessWidget {
                     Expanded(
                       child: RichText(
                         text: TextSpan(
-                          style: Theme.of(context).textTheme.body1,
+                          style: Theme.of(context).textTheme.bodyText2,
                           children: [
                             TextSpan(
                                 text: 'If more than one enemy ties for' +
@@ -98,7 +98,7 @@ class MonsterFocus extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                         text: 'Example:',
@@ -149,7 +149,7 @@ class MonsterFocus extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: 'In the case where there are no valid targets on which to focus, because ' +

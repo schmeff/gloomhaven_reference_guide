@@ -17,7 +17,7 @@ class Conditions extends StatelessWidget {
               children: <Widget>[
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: '\nCertain abilities may apply conditions to their targets. When a condition is applied to a figure (except curse and bless), the' +
@@ -30,7 +30,7 @@ class Conditions extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(text: 'The following are '),
                       TextSpan(
@@ -209,7 +209,7 @@ class Conditions extends StatelessWidget {
                 const SizedBox(height: 20),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(text: 'The following are '),
                       TextSpan(

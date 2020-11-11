@@ -1,9 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:gloomhaven_reference_guide/screens/main_screen.dart';
+import 'package:provider/provider.dart';
+
+import './screens/main_screen.dart';
+import './providers/scenarios.dart';
 
 import './routes.dart';
 
-void main() => runApp(GloomhavenApp());
+void main() => runApp(
+      MultiProvider(
+        child: GloomhavenApp(),
+        providers: [
+          ChangeNotifierProvider(
+            create: (ctx) => Scenarios(),
+          )
+        ],
+      ),
+    );
 
 class GloomhavenApp extends StatefulWidget {
   @override
@@ -19,13 +31,13 @@ class _GloomhavenAppState extends State<GloomhavenApp> {
       primaryColor: Color.fromRGBO(135, 163, 123, 1),
       fontFamily: 'HighTower',
       textTheme: TextTheme(
-          body1: TextStyle(
+          bodyText2: TextStyle(
         fontSize: 18,
         fontFamily: 'HighTower',
       )),
       appBarTheme: AppBarTheme(
         textTheme: TextTheme(
-          title: TextStyle(
+          headline6: TextStyle(
               color: Color.fromRGBO(53, 52, 48, 1),
               fontFamily: 'PirataOne',
               fontSize: 25.0),

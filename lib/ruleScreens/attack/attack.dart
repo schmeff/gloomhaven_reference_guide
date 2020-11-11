@@ -25,7 +25,7 @@ class Attack extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(text: 'An '),
                       TextSpan(
@@ -64,7 +64,7 @@ class Attack extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                         text: 'Ranged attacks',
@@ -87,7 +87,7 @@ class Attack extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                         text: 'Melee attacks',
@@ -103,7 +103,7 @@ class Attack extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                         text: 'Line-of-sight:',
@@ -131,7 +131,7 @@ class Attack extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: 'When attacking, the base attack value' +
@@ -147,7 +147,7 @@ class Attack extends StatelessWidget {
                     Flexible(
                       child: RichText(
                         text: TextSpan(
-                          style: Theme.of(context).textTheme.body1,
+                          style: Theme.of(context).textTheme.bodyText2,
                           children: [
                             TextSpan(text: 'An '),
                             TextSpan(
@@ -172,7 +172,7 @@ class Attack extends StatelessWidget {
                     Flexible(
                       child: RichText(
                         text: TextSpan(
-                          style: Theme.of(context).textTheme.body1,
+                          style: Theme.of(context).textTheme.bodyText2,
                           children: [
                             TextSpan(text: 'Next, an '),
                             TextSpan(
@@ -197,7 +197,7 @@ class Attack extends StatelessWidget {
                     Flexible(
                       child: RichText(
                         text: TextSpan(
-                          style: Theme.of(context).textTheme.body1,
+                          style: Theme.of(context).textTheme.bodyText2,
                           children: [
                             TextSpan(text: 'Lastly, the '),
                             TextSpan(
@@ -222,7 +222,7 @@ class Attack extends StatelessWidget {
                     Flexible(
                       child: RichText(
                         text: TextSpan(
-                          style: Theme.of(context).textTheme.body1,
+                          style: Theme.of(context).textTheme.bodyText2,
                           children: [
                             TextSpan(
                                 text: 'If there are multiple modifiers in any single step of this process, the player chooses the order' +
@@ -244,7 +244,7 @@ class Attack extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                         text: 'Example: ',
@@ -268,7 +268,7 @@ class Attack extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: 'Any damage suffered by a monster should be tracked on the stat sleeve in the section corresponding to the number on the specific' +
@@ -279,7 +279,7 @@ class Attack extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                         text: 'When a monster dies, a money token' +

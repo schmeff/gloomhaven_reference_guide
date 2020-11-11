@@ -25,6 +25,28 @@ class _MainScreenState extends State<MainScreen> {
       appBar: AppBar(
         title:
             Text(_selectedIndex == 0 ? "Gloomhaven Rules" : "Scenario Tracker"),
+        actions: _selectedIndex == 0
+            ? []
+            : [
+                IconButton(
+                    icon: Icon(
+                      Icons.search,
+                      color: Colors.black87,
+                    ),
+                    onPressed: () {}),
+                IconButton(
+                    icon: Icon(
+                      Icons.filter_list,
+                      color: Colors.black87,
+                    ),
+                    onPressed: () {}),
+                IconButton(
+                    icon: Icon(
+                      Icons.settings,
+                      color: Colors.black87,
+                    ),
+                    onPressed: () {}),
+              ],
       ),
       body: _selectedIndex == 0 ? RulesList() : ScenariosList(),
       bottomNavigationBar: BottomNavigationBar(

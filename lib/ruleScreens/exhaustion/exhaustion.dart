@@ -17,7 +17,7 @@ class Exhaustion extends StatelessWidget {
               children: <Widget>[
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(text: '\nA character can become '),
                       TextSpan(
@@ -44,7 +44,7 @@ class Exhaustion extends StatelessWidget {
                     Expanded(
                       child: RichText(
                         text: TextSpan(
-                          style: Theme.of(context).textTheme.body1,
+                          style: Theme.of(context).textTheme.bodyText2,
                           children: [
                             TextSpan(
                                 text:
@@ -69,7 +69,7 @@ class Exhaustion extends StatelessWidget {
                     Expanded(
                       child: RichText(
                         text: TextSpan(
-                          style: Theme.of(context).textTheme.body1,
+                          style: Theme.of(context).textTheme.bodyText2,
                           children: [
                             TextSpan(
                                 text: 'If, at the beginning of a round, a player cannot play two cards from his or her hand (because they have one card or no ' +
@@ -83,7 +83,7 @@ class Exhaustion extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: 'In either case, all ability cards are placed in the ' +

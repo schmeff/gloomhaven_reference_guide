@@ -18,7 +18,7 @@ class ElementalInfusions extends StatelessWidget {
               children: <Widget>[
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text:
@@ -88,7 +88,7 @@ class ElementalInfusions extends StatelessWidget {
                       flex: 1,
                       child: RichText(
                           text: TextSpan(
-                        style: Theme.of(context).textTheme.body1,
+                        style: Theme.of(context).textTheme.bodyText2,
                         children: [
                           TextSpan(
                               text:
@@ -126,7 +126,7 @@ class ElementalInfusions extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: 'Elemental infusions can be used' +
@@ -172,7 +172,7 @@ class ElementalInfusions extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: '\nIf an ability contains multiple separate augments,' +
@@ -183,7 +183,7 @@ class ElementalInfusions extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    style: Theme.of(context).textTheme.body1,
+                    style: Theme.of(context).textTheme.bodyText2,
                     children: [
                       TextSpan(
                           text: 'Just like characters, monsters also have the ability to create and consume elements. Monsters always consume elements if they can,' +
@@ -208,7 +208,7 @@ class ElementalInfusions extends StatelessWidget {
                       flex: 3,
                       child: RichText(
                           text: TextSpan(
-                        style: Theme.of(context).textTheme.body1,
+                        style: Theme.of(context).textTheme.bodyText2,
                         children: [
                           TextSpan(
                               text: 'This multi-colored circle represents '),
