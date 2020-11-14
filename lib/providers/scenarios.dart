@@ -8,6 +8,7 @@ import '../enums/party_achievement.dart';
 import '../enums/global_achievement.dart';
 import '../enums/quests.dart';
 import '../enums/required_items.dart';
+import '../enums/filters.dart';
 
 import '../data/scenarios_data.dart';
 
@@ -20,13 +21,21 @@ class Scenarios with ChangeNotifier {
   static const ITEMS_KEY = "ITEMS";
 
   List<Scenario> _filteredScenarios = [];
+  List<Scenario> _allScenarios;
+
+  Filters _currentFilter;
 
   Scenarios() {
+    this._currentFilter = Filters.ALL_SCENARIOS;
     this.updateScenarios();
   }
 
   Future<List<Scenario>> get filteredScenarios async {
     return this._filteredScenarios;
+  }
+
+  Filters get currentFilter {
+    return this._currentFilter;
   }
 
   void completeScenario(Scenario s) async {
@@ -305,8 +314,8 @@ class Scenarios with ChangeNotifier {
       }
     });
 
-    this._filteredScenarios = allScenarios;
-    notifyListeners();
+    this._allScenarios = allScenarios;
+    this._filterScenarios();
   }
 
   bool isScenarioAvailable(Scenario scenario, SavedScenarioData savedData) {
@@ -344,5 +353,33 @@ class Scenarios with ChangeNotifier {
       }
     });
     return true;
+  }
+
+  updateCurrentFilter(Filters newFilter) {
+    if (currentFilter != newFilter) {
+      this._currentFilter = newFilter;
+      this._filterScenarios();
+      notifyListeners();
+    }
+  }
+
+  _filterScenarios() {
+    if (this._currentFilter == Filters.COMPLETED_SCENARIOS) {
+      this._filteredScenarios =
+          this._allScenarios.where((scenario) => scenario.completed).toList();
+    } else if (this._currentFilter == Filters.AVAILABLE_SCENARIOS) {
+      this._filteredScenarios = this
+          ._allScenarios
+          .where((scenario) => scenario.available && !scenario.completed)
+          .toList();
+    } else if (this._currentFilter == Filters.LOCKED_SCENARIOS) {
+      this._filteredScenarios = this
+          ._allScenarios
+          .where((scenario) => !scenario.available && !scenario.completed)
+          .toList();
+    } else {
+      this._filteredScenarios = this._allScenarios;
+    }
+    notifyListeners();
   }
 }

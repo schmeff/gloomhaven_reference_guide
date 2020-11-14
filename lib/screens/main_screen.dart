@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../widgets/rules_list.dart';
 import '../widgets/scenarios_list.dart';
+import '../widgets/filter_menu.dart';
 
 class MainScreen extends StatefulWidget {
   static const routeName = '/mainScreen';
